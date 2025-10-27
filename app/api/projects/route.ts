@@ -51,6 +51,9 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
+  const v0 = createClient({
+    apiKey: process.env.V0_API_KEY,
+  })
   try {
     const body = await request.json()
     const { name } = body
