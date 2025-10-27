@@ -4,6 +4,7 @@
 
 ### Minor Changes
 
+- Fixed v0-sdk import issues and updated all dependencies to latest versions
 - d56f338: update usage, add authorId, add attachments
 
 ### Patch Changes
