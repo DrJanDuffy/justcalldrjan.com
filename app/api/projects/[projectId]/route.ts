@@ -1,10 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { v0 } from 'v0-sdk'
+import { createClient } from '@v0/sdk'
 
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ projectId: string }> },
 ) {
+  const v0 = createClient({
+    apiKey: process.env.V0_API_KEY,
+  })
   try {
     const { projectId } = await params
 

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { v0 } from 'v0-sdk'
+import { createClient } from '@v0/sdk'
 import {
   getUserIP,
   getUserProjects,
@@ -7,6 +7,9 @@ import {
 } from '@/lib/rate-limiter'
 
 export async function GET(request: NextRequest) {
+  const v0 = createClient({
+    apiKey: process.env.V0_API_KEY,
+  })
   try {
     // Get user's IP
     const userIP = getUserIP(request)

@@ -1,8 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { v0 } from 'v0-sdk'
+import { createClient } from '@v0/sdk'
 import { getUserIP, associateProjectWithIP } from '@/lib/rate-limiter'
 
 export async function POST(request: NextRequest) {
+  const v0 = createClient({
+    apiKey: process.env.V0_API_KEY,
+  })
   try {
     const { chatId, projectId } = await request.json()
 

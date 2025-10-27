@@ -1,4 +1,4 @@
-import { v0, ChatDetail } from 'v0-sdk'
+import { createClient, ChatDetail } from '@v0/sdk'
 import { NextRequest, NextResponse } from 'next/server'
 import {
   checkRateLimit,
@@ -8,6 +8,9 @@ import {
 } from '@/lib/rate-limiter'
 
 export async function POST(request: NextRequest) {
+  const v0 = createClient({
+    apiKey: process.env.V0_API_KEY,
+  })
   try {
     const {
       message,

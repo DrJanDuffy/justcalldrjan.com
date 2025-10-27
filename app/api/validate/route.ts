@@ -1,8 +1,12 @@
-import { v0 } from 'v0-sdk'
+import { createClient } from '@v0/sdk'
 import { NextResponse } from 'next/server'
 
 export async function GET() {
   try {
+    const v0 = createClient({
+      apiKey: process.env.V0_API_KEY,
+    })
+
     // Use v0.user.get() to verify they are authenticated correctly
     // This is more accurate than projects.find() for authentication verification
     const user = await v0.user.get()
