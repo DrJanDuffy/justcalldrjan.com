@@ -1,4 +1,4 @@
-import { createClient, ChatDetail } from '@v0/sdk'
+import { createClient, ChatDetail } from 'v0-sdk'
 import { NextRequest, NextResponse } from 'next/server'
 import {
   checkRateLimit,

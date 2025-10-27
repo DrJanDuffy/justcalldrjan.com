@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@v0/sdk'
+import { createClient } from 'v0-sdk'
 
 export async function POST(request: NextRequest) {
   const v0 = createClient({

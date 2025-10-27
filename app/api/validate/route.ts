@@ -1,4 +1,4 @@
-import { createClient } from '@v0/sdk'
+import { createClient } from 'v0-sdk'
 import { NextResponse } from 'next/server'
 
 export async function GET() {
