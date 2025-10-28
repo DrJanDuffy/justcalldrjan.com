@@ -2,10 +2,24 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
 
 export default function NorthLasVegasPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'North Las Vegas: Growth, Affordability, and Opportunity',
+    description: 'North Las Vegas combines affordability with growth, making it an attractive option for first-time homebuyers and families seeking value in the Las Vegas Valley.',
+    datePublished: '2024-03-10',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       {/* Hero with H1 */}
       <section className="bg-gradient-to-r from-pink-600 to-rose-600 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
@@ -287,7 +301,8 @@ export default function NorthLasVegasPage() {
           </Link>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 

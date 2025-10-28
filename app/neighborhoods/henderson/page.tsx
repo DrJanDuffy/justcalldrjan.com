@@ -2,10 +2,24 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
 
 export default function HendersonPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'Henderson Las Vegas: Affordability, Amenities, and Great Value',
+    description: 'Henderson offers Las Vegas residents exceptional value with quality schools, family-friendly communities, and more affordable housing than many other Vegas areas.',
+    datePublished: '2024-03-05',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       {/* Hero with H1 */}
       <section className="bg-gradient-to-r from-green-600 to-teal-600 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
@@ -287,7 +301,8 @@ export default function HendersonPage() {
           </Link>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 

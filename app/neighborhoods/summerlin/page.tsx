@@ -2,10 +2,24 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
 
 export default function SummerlinPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'Summerlin Las Vegas: Master-Planned Living at Its Finest',
+    description: 'Discover why Summerlin is considered one of the best neighborhoods in Las Vegas. From world-class golf courses to top-rated schools and master-planned communities, find everything you need to know about living in Summerlin.',
+    datePublished: '2024-03-01',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       {/* Hero Section with H1 */}
       <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
@@ -326,7 +340,8 @@ export default function SummerlinPage() {
           </Link>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 
