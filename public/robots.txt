@@ -1,0 +1,13 @@
+# robots.txt for www.calldrduffy.com and justcalldrjan.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemaps
+Sitemap: https://www.calldrduffy.com/sitemap.xml
+Sitemap: https://justcalldrjan.com/sitemap.xml
+
