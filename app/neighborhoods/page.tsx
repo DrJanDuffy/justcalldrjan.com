@@ -125,7 +125,6 @@ export default function NeighborhoodsPage() {
               <Link 
                 key={neighborhood.slug}
                 href={neighborhood.path}
-                href={`/neighborhoods/${neighborhood.slug}`}
                 className="group"
               >
                 <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden h-full">
