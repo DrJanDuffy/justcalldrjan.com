@@ -172,14 +172,14 @@ export default function WhyDidntItSellPage() {
             <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: The Systematic Approach</h3>
             <p className="text-gray-700 mb-3">
               Rather than trying everything and hoping something works, Dr. Jan's approach systematically addresses identified issues. If pricing was the only problem, that gets fixed. If it was combination of pricing and presentation, both get addressed comprehensively.
-              </p>
-              <p className="text-gray-700 mb-3">
+            </p>
+            <p className="text-gray-700 mb-3">
               She doesn't assume what needs fixing but analyzes specifically what happened with your listing: showing activity, buyer feedback, competition, market conditions, and presentation. This diagnostic approach ensures the right problems get fixed efficiently.
-              </p>
-              <p className="text-gray-700">
-                The result is usually success where there was previous failure: homes that sat for months selling in weeks, properties with no offers attracting multiple offers, frustrated homeowners becoming successful sellers. This systematic approach is why she maintains such strong results with what many agents consider difficult listings.
-              </p>
-            </div>
+            </p>
+            <p className="text-gray-700">
+              The result is usually success where there was previous failure: homes that sat for months selling in weeks, properties with no offers attracting multiple offers, frustrated homeowners becoming successful sellers. This systematic approach is why she maintains such strong results with what many agents consider difficult listings.
+            </p>
+          </div>
           </div>
         </div>
       </section>
