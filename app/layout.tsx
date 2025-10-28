@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Dr. Janet Duffy - Las Vegas Real Estate Agent',
     description: 'Your trusted Las Vegas real estate expert. Find your dream home or sell with confidence.',
     images: ['/og-image.png'],
-    url: 'https://justcalldrjan.com',
+    url: 'https://www.justcalldrjan.com',
     siteName: 'Just Call Dr. Jan',
     type: 'website',
     locale: 'en_US',
