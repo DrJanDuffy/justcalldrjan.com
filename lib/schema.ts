@@ -22,19 +22,48 @@ export const DR_JAN_INFO = {
 export function getLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'RealEstateAgent',
+    '@id': `${BASE_URL}#realestateagent`,
     name: DR_JAN_INFO.name,
     description: "Las Vegas's Trusted Expert for Hard-to-Sell Homes",
     url: BASE_URL,
     telephone: DR_JAN_INFO.telephone,
     email: DR_JAN_INFO.email,
-    address: DR_JAN_INFO.address,
+    address: {
+      ...DR_JAN_INFO.address,
+      streetAddress: 'Las Vegas, NV' // Add if specific address available
+    },
     priceRange: '$$',
     image: `${BASE_URL}/og-image.png`,
+    logo: `${BASE_URL}/og-image.png`,
     licenseNumber: DR_JAN_INFO.licenseNumber,
-    areaServed: {
-      '@type': 'City',
-      name: 'Las Vegas'
+    areaServed: [
+      {
+        '@type': 'City',
+        name: 'Las Vegas',
+        containedIn: {
+          '@type': 'State',
+          name: 'Nevada'
+        }
+      },
+      {
+        '@type': 'City',
+        name: 'Henderson'
+      },
+      {
+        '@type': 'City',
+        name: 'Summerlin'
+      },
+      {
+        '@type': 'City',
+        name: 'North Las Vegas'
+      }
+    ],
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 36.1699,
+      longitude: -115.1398,
+      address: DR_JAN_INFO.address
     },
     openingHoursSpecification: [
       {
@@ -43,7 +72,9 @@ export function getLocalBusinessSchema() {
         opens: '00:00',
         closes: '23:59'
       }
-    ]
+    ],
+    paymentAccepted: 'Cash, Credit Card, Financing',
+    currenciesAccepted: 'USD'
   }
 }
 

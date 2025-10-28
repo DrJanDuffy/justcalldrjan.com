@@ -5,6 +5,7 @@ import AuthorBadge from '@/components/author-badge'
 import StructuredDataScript from '@/components/structured-data-script'
 import Breadcrumbs from '@/components/breadcrumbs'
 import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
+import { getPostalCodeSchema, getServiceAreaSchema } from '@/lib/hyperlocal-schema'
 
 export default function Zip89117Page() {
   const articleSchema = getArticleSchema({
@@ -15,9 +16,17 @@ export default function Zip89117Page() {
     author: getPersonSchema()
   })
 
+  const postalCodeSchema = getPostalCodeSchema('89117', 'Summerlin')
+  const serviceAreaSchema = getServiceAreaSchema([
+    { name: '89117', type: 'ZipCode' },
+    { name: 'Summerlin', type: 'Neighborhood' }
+  ])
+
   return (
     <>
       <StructuredDataScript data={articleSchema} id="article-schema" />
+      <StructuredDataScript data={postalCodeSchema} id="postal-code-schema" />
+      <StructuredDataScript data={serviceAreaSchema} id="service-area-schema" />
       <Breadcrumbs />
       <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-20 px-4">

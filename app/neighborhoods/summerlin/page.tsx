@@ -5,6 +5,7 @@ import AuthorBadge from '@/components/author-badge'
 import StructuredDataScript from '@/components/structured-data-script'
 import Breadcrumbs from '@/components/breadcrumbs'
 import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
+import { getPlaceSchema, getCitySchema } from '@/lib/hyperlocal-schema'
 
 export default function SummerlinPage() {
   const articleSchema = getArticleSchema({
@@ -15,9 +16,14 @@ export default function SummerlinPage() {
     author: getPersonSchema()
   })
 
+  const placeSchema = getPlaceSchema('Summerlin', 'Neighborhood')
+  const citySchema = getCitySchema('Summerlin', 'Nevada')
+
   return (
     <>
       <StructuredDataScript data={articleSchema} id="article-schema" />
+      <StructuredDataScript data={placeSchema} id="place-schema" />
+      <StructuredDataScript data={citySchema} id="city-schema" />
       <Breadcrumbs />
       <div className="min-h-screen bg-white">
       {/* Hero Section with H1 */}

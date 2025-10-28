@@ -6,12 +6,13 @@ import SiteNavigation from '../components/site-nav'
 import SiteFooter from '../components/site-footer'
 import Analytics from './analytics'
 import StructuredData from '../components/structured-data'
-import { 
-  getLocalBusinessSchema, 
-  getOrganizationSchema, 
+import {
+  getLocalBusinessSchema,
+  getOrganizationSchema,
   getRealEstateAgentSchema,
-  getWebSiteSchema 
+  getWebSiteSchema
 } from '../lib/schema'
+import { getMultiLocationBusinessSchema } from '../lib/hyperlocal-schema'
 import './globals.css'
 
 const geistSans = Geist({
@@ -62,10 +63,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <Analytics />
-        <StructuredData data={getRealEstateAgentSchema()} id="real-estate-agent-schema" />
-        <StructuredData data={getLocalBusinessSchema()} id="local-business-schema" />
-        <StructuredData data={getOrganizationSchema()} id="organization-schema" />
-        <StructuredData data={getWebSiteSchema()} id="website-schema" />
+                <StructuredData data={getRealEstateAgentSchema()} id="real-estate-agent-schema" />
+                <StructuredData data={getLocalBusinessSchema()} id="local-business-schema" />
+                <StructuredData data={getOrganizationSchema()} id="organization-schema" />
+                <StructuredData data={getWebSiteSchema()} id="website-schema" />
+                <StructuredData data={getMultiLocationBusinessSchema()} id="multi-location-business-schema" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
