@@ -9,10 +9,40 @@ export default function Homepage() {
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Integrate with follow up boss API
-    console.log('Form submitted:', { address, name, email, phone })
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          address,
+          source: 'Homepage Lead Form'
+        })
+      })
+
+      if (response.ok) {
+        alert('Thank you! Dr. Jan will contact you soon.')
+        setAddress('')
+        setName('')
+        setEmail('')
+        setPhone('')
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      alert('There was an error. Please try again or call (702) 222-1964.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -67,9 +97,10 @@ export default function Homepage() {
               />
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
+                disabled={isSubmitting}
+                className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-bold py-4 px-8 rounded-lg transition-colors"
               >
-                Get Your Free Analysis
+                {isSubmitting ? 'Submitting...' : 'Get Your Free Analysis'}
               </button>
             </div>
             <p className="text-sm text-gray-600 mt-4 text-center">
