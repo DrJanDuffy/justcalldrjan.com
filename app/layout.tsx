@@ -59,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" xmlLang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <Analytics />
         <StructuredData data={getRealEstateAgentSchema()} id="real-estate-agent-schema" />
