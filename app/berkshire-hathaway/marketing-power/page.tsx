@@ -2,10 +2,24 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
 
 export default function MarketingPowerPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'Institutional Marketing Power: Why 87% of Expired Listings Failed',
+    description: 'Your home didn\'t sell because it never reached qualified buyers. Dr. Jan + Berkshire Hathaway HomeServices delivers global marketing reach that regional firms simply can\'t match.',
+    datePublished: '2024-06-05',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -149,7 +163,8 @@ export default function MarketingPowerPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 
