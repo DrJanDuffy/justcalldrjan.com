@@ -27,6 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     // High Priority Pages - 0.9
     {
+      url: `${baseUrl}/seller-consultation`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/success-stories`,
       lastModified: now,
       changeFrequency: 'weekly',
@@ -240,6 +246,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/zipcodes/89134`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/zipcodes/89139`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.75,
