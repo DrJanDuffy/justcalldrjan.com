@@ -15,10 +15,16 @@ export default function SiteFooter() {
           <div>
             <h3 className="text-lg font-bold mb-4">Dr. Janet Duffy</h3>
             <p className="text-gray-300 mb-2">
-              © {currentYear} <span itemProp="name">Dr. Janet Duffy</span> - <span itemProp="description">Las Vegas&apos;s Trusted Expert for Hard-to-Sell Homes</span>. All rights reserved.
+              <span itemProp="name">Dr. Janet Duffy</span> | Licensed Real Estate Professional
             </p>
-            <p className="text-gray-300">
+            <p className="text-gray-300 mb-2">
+              <span itemProp="brand">Berkshire Hathaway HomeServices</span> | Las Vegas, NV
+            </p>
+            <p className="text-gray-300 mb-2">
               NV RE License #<span itemProp="licenseNumber">S.0197614</span>
+            </p>
+            <p className="text-gray-300 mt-2">
+              © {currentYear} <span itemProp="description">Las Vegas&apos;s Trusted Expert for Hard-to-Sell Homes</span>. All rights reserved.
             </p>
             <p className="text-gray-300 mt-2">
               Specializing in getting top dollar for homes that didn&apos;t sell the first time around.

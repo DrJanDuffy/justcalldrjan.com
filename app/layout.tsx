@@ -28,11 +28,11 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Dr. Janet Duffy - Las Vegas Real Estate Agent',
-  description: 'Your trusted Las Vegas real estate expert. Find your dream home or sell with confidence. Call Dr. Janet Duffy today!',
+  title: 'Dr. Janet Duffy | Licensed Real Estate Professional | Berkshire Hathaway HomeServices',
+  description: 'Licensed Real Estate Professional with Berkshire Hathaway HomeServices. Las Vegas, NV. License #S.0197614. Expert help for homes that didn\'t sell.',
   openGraph: {
-    title: 'Dr. Janet Duffy - Las Vegas Real Estate Agent',
-    description: 'Your trusted Las Vegas real estate expert. Find your dream home or sell with confidence.',
+    title: 'Dr. Janet Duffy | Licensed Real Estate Professional | Berkshire Hathaway HomeServices',
+    description: 'Licensed Real Estate Professional with Berkshire Hathaway HomeServices. Las Vegas, NV. License #S.0197614.',
     images: ['/og-image.png'],
     url: 'https://www.calldrduffy.com',
     siteName: 'Just Call Dr. Jan',

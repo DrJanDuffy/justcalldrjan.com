@@ -4,9 +4,12 @@ export const BASE_URL = 'https://www.calldrduffy.com'
 
 export const DR_JAN_INFO = {
   name: 'Dr. Janet Duffy',
+  fullTitle: 'Dr. Janet Duffy | Licensed Real Estate Professional',
   telephone: '+17022221964',
   email: 'contact@calldrduffy.com',
   licenseNumber: 'S.0197614',
+  brokerage: 'Berkshire Hathaway HomeServices',
+  location: 'Las Vegas, NV',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Las Vegas',
@@ -79,10 +82,16 @@ export function getRealEstateAgentSchema() {
       '@type': 'City',
       name: 'Las Vegas'
     },
-    jobTitle: 'Real Estate Agent',
+    jobTitle: 'Licensed Real Estate Professional',
     worksFor: {
       '@type': 'Organization',
-      name: 'Berkshire Hathaway HomeServices'
+      name: 'Berkshire Hathaway HomeServices',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Las Vegas',
+        addressRegion: 'NV',
+        addressCountry: 'US'
+      }
     },
     knowsAbout: [
       'Las Vegas Real Estate',
@@ -117,12 +126,17 @@ export function getPersonSchema() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: DR_JAN_INFO.name,
-    jobTitle: 'Real Estate Agent',
+    jobTitle: 'Licensed Real Estate Professional',
+    description: `${DR_JAN_INFO.fullTitle}\n${DR_JAN_INFO.brokerage} | ${DR_JAN_INFO.location}\nLicense #${DR_JAN_INFO.licenseNumber}`,
     telephone: DR_JAN_INFO.telephone,
     email: DR_JAN_INFO.email,
     url: BASE_URL,
     image: `${BASE_URL}/og-image.png`,
     sameAs: [],
+    worksFor: {
+      '@type': 'Organization',
+      name: DR_JAN_INFO.brokerage
+    },
     knowsAbout: [
       'Las Vegas Real Estate',
       'Expired Listings',
