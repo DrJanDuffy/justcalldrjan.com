@@ -9,7 +9,10 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/admin/', '/api/'],
       },
     ],
-    sitemap: 'https://www.calldrduffy.com/sitemap.xml',
+    sitemap: [
+      'https://www.calldrduffy.com/sitemap.xml',
+      'https://justcalldrjan.com/sitemap.xml',
+    ],
   }
 }
 

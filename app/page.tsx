@@ -131,9 +131,9 @@ export default function Homepage() {
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="text-5xl font-bold text-blue-600 mb-2">96%</div>
               <p className="text-xl text-gray-700">Client Satisfaction Rate</p>
-            </div>
           </div>
         </div>
+      </div>
       </section>
 
       {/* Featured Neighborhoods */}

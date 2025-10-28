@@ -1,10 +1,11 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.calldrduffy.com'
-
-  // Core pages with highest priority
-  const corePages = [
+  const wwwDomain = 'https://www.calldrduffy.com'
+  const nonWwwDomain = 'https://justcalldrjan.com'
+  
+  // Generate sitemap entries for both domains
+  const createEntries = (baseUrl: string) => [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -23,10 +24,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
-  ]
-
-  // Information pages
-  const infoPages = [
     {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
@@ -39,10 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
-  ]
-
-  // Neighborhood pages
-  const neighborhoodPages = [
     {
       url: `${baseUrl}/neighborhoods`,
       lastModified: new Date(),
@@ -69,5 +62,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  return [...corePages, ...infoPages, ...neighborhoodPages]
+  // Return entries for both domains
+  return [...createEntries(wwwDomain), ...createEntries(nonWwwDomain)]
 }
