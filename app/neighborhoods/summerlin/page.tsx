@@ -38,7 +38,7 @@ export default function SummerlinPage() {
             </div>
             
             <div className="bg-blue-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Summerlin Quick Facts</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Summerlin Quick Facts</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="font-bold mr-2">• Population:</span>
@@ -87,26 +87,26 @@ export default function SummerlinPage() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Median Home Prices</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Median Home Prices</h3>
               <p className="text-4xl font-bold text-blue-600 mb-2">$575,000</p>
               <p className="text-gray-600">Median sale price in Summerlin, approximately 15% above Las Vegas metro average</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Average Days on Market</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Average Days on Market</h3>
               <p className="text-4xl font-bold text-blue-600 mb-2">42</p>
               <p className="text-gray-600">Days, significantly faster than Las Vegas average of 65 days</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Inventory</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Inventory</h3>
               <p className="text-4xl font-bold text-blue-600 mb-2">234</p>
               <p className="text-gray-600">Active listings, representing 1.8 months of supply (seller's market)</p>
             </div>
           </div>
 
           <div className="bg-blue-600 text-white p-8 rounded-lg mb-8">
-            <h3 className="text-2xl font-bold mb-4">H3: Why Summerlin Homes Hold Their Value</h3>
+            <h3 className="text-2xl font-bold mb-4">Why Summerlin Homes Hold Their Value</h3>
             <p className="mb-4">
               Summerlin properties maintain strong resale value due to several factors. First, the master-planned nature ensures infrastructure continues improving rather than deteriorating. Second, architectural guidelines and active HOAs maintain neighborhood aesthetics and prevent properties from becoming dated or run-down. Third, the limited land supply means less new competition.
             </p>
@@ -120,7 +120,7 @@ export default function SummerlinPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Buying in Summerlin</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Buying in Summerlin</h3>
               <p className="text-gray-700 mb-3">
                 Competition in Summerlin is often fierce, especially for well-priced properties in desirable sub-communities. Buyers need to be prepared to act quickly and make strong offers. Pre-approval, competitive pricing, and flexible terms often make the difference.
               </p>
@@ -133,7 +133,7 @@ export default function SummerlinPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Selling in Summerlin</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Selling in Summerlin</h3>
               <p className="text-gray-700 mb-3">
                 Summerlin sellers benefit from strong demand, but preparation still matters. Properties that show well, are priced correctly, and marketed effectively sell fastest. Professional staging, quality photography, and strategic pricing often yield multiple offers.
               </p>
@@ -161,7 +161,7 @@ export default function SummerlinPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Recreation and Amenities</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Recreation and Amenities</h3>
               <p className="text-gray-700 mb-3">
                 Summerlin's recreational amenities are world-class. The community boasts 10 golf courses including TPC Summerlin (home to a PGA Tour event), five public golf courses, and several private club courses. Golf course living here means more than just golf - it means scenic views, meticulously maintained landscaping, and added property value.
               </p>
@@ -174,7 +174,7 @@ export default function SummerlinPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Shopping and Dining</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Shopping and Dining</h3>
               <p className="text-gray-700 mb-3">
                 Summerlin has developed extensive shopping and dining options within the community itself. Downtown Summerlin, a 106-acre mixed-use development, features major retail, restaurants, entertainment, and offices all within walking distance of many homes.
               </p>
@@ -188,7 +188,7 @@ export default function SummerlinPage() {
           </div>
 
           <div className="bg-gray-50 p-8 rounded-lg mb-8">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Schools and Education</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Schools and Education</h3>
             <p className="text-gray-700 mb-3">
               Summerlin is home to many of Clark County's top-rated schools. Elementary schools like Givens and Garehime consistently receive A ratings, while Palo Verde High School is one of Nevada's highest-ranked high schools. Many families specifically choose Summerlin for the schools.
             </p>
@@ -202,7 +202,7 @@ export default function SummerlinPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Safety and Security</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Safety and Security</h3>
               <p className="text-gray-700 mb-3">
                 Summerlin consistently reports lower crime rates than other Las Vegas neighborhoods. The master-planned nature, active HOAs, well-lit streets, and neighborhood watch programs all contribute to safety. Metropolitan Police Department presence is strong throughout the community.
               </p>
@@ -215,7 +215,7 @@ export default function SummerlinPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Community Culture</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Community Culture</h3>
               <p className="text-gray-700 mb-3">
                 Summerlin residents often describe a strong sense of community. HOAs organize events like neighborhood parties, holiday celebrations, and social clubs. The trail system and parks naturally bring neighbors together for casual interactions and friendships.
               </p>
@@ -242,7 +242,7 @@ export default function SummerlinPage() {
           </p>
 
           <div className="bg-white p-8 rounded-lg mb-8 shadow-md">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Why Summerlin Expired Listings Need Specialized Help</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Why Summerlin Expired Listings Need Specialized Help</h3>
             <p className="text-gray-700 mb-3">
               When a Summerlin home doesn't sell, it's often due to pricing, presentation, or marketing strategy rather than the property itself. Summerlin's strong market means correctly positioned homes sell quickly and well. Dr. Jan specializes in analyzing why homes expire and creating winning strategies for relisting.
             </p>
@@ -256,7 +256,7 @@ export default function SummerlinPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Buyers: Finding Your Summerlin Home</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Buyers: Finding Your Summerlin Home</h3>
               <p className="text-gray-700 mb-3">
                 Buying in Summerlin requires understanding sub-communities, school zones, HOA details, and value factors. Dr. Jan helps buyers navigate Summerlin's complexity to find homes that fit both lifestyle and budget perfectly.
               </p>
@@ -269,7 +269,7 @@ export default function SummerlinPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Sellers: Maximizing Your Summerlin Sale</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Sellers: Maximizing Your Summerlin Sale</h3>
               <p className="text-gray-700 mb-3">
                 Selling in Summerlin successfully requires proper pricing, professional presentation, and effective marketing. Dr. Jan's experience with expired listings provides unique insight into what works and what doesn't in the Summerlin market.
               </p>

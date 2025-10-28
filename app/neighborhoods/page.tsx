@@ -219,7 +219,7 @@ export default function NeighborhoodsPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Master-Planned Communities</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Master-Planned Communities</h3>
               <p className="text-gray-600 mb-3">
                 Las Vegas is renowned for master-planned communities that offer residents a complete lifestyle package. Summerlin, developed by The Howard Hughes Corporation, spans 22,500 acres with parks, trails, schools, shopping, and entertainment all within walking distance of many homes.
               </p>
@@ -232,7 +232,7 @@ export default function NeighborhoodsPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: New Construction vs Established Neighborhoods</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">New Construction vs Established Neighborhoods</h3>
               <p className="text-gray-600 mb-3">
                 Las Vegas offers both brand-new construction and established neighborhoods, each with distinct advantages. New construction areas like Skye Canyon, Inspirada, and Cadence offer modern floor plans, energy-efficient features, and the latest in home design and technology.
               </p>
@@ -259,7 +259,7 @@ export default function NeighborhoodsPage() {
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-blue-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Neighborhood Expertise</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Neighborhood Expertise</h3>
               <p className="text-gray-700 mb-3">
                 Dr. Jan has deep knowledge of Las Vegas neighborhoods, including sub-communities, school zones, HOA details, and market trends. She can identify the best areas for your specific needs and budget.
               </p>
@@ -269,7 +269,7 @@ export default function NeighborhoodsPage() {
             </div>
             
             <div className="bg-blue-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Market Intelligence</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Market Intelligence</h3>
               <p className="text-gray-700 mb-3">
                 Each Las Vegas neighborhood has its own market dynamics, price trends, and buyer competition. Understanding these nuances helps you make better decisions whether buying or selling.
               </p>
@@ -279,7 +279,7 @@ export default function NeighborhoodsPage() {
             </div>
             
             <div className="bg-blue-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Personalized Service</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Personalized Service</h3>
               <p className="text-gray-700 mb-3">
                 Finding the right neighborhood is about more than just prices and amenities - it's about finding a community that fits your lifestyle, commute, family needs, and long-term goals.
               </p>

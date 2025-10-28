@@ -30,7 +30,7 @@ export default function ParadisePage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: High-Traffic, High-Competition Market</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">High-Traffic, High-Competition Market</h3>
               <p className="text-gray-700 mb-3">
                 Paradise encompasses the Strip, making it one of the most visible real estate markets in the world. This visibility attracts buyers from everywhere, but also creates intense competition among sellers. Properties that didn't sell often struggled against this competition.
               </p>
@@ -43,7 +43,7 @@ export default function ParadisePage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Diverse Buyer Pool</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Diverse Buyer Pool</h3>
               <p className="text-gray-700 mb-3">
                 Paradise attracts different buyer types: Strip employees seeking proximity to work, investors seeking rental income, luxury buyers wanting world-class amenities, and those seeking entertainment access. Understanding which buyers fit your property is critical.
               </p>
@@ -71,21 +71,21 @@ export default function ParadisePage() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-red-50 p-6 rounded-lg border border-red-200">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">H3: Pricing Above Market</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Pricing Above Market</h3>
               <p className="text-gray-700">
                 Paradise properties often have sentimental or perceived value that doesn't match market reality. Luxury condos and homes near the Strip command premium prices, but those prices must be justified by actual value, amenities, and comparable sales.
               </p>
             </div>
             
             <div className="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">H3: Competition Challenges</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Competition Challenges</h3>
               <p className="text-gray-700">
                 The Paradise market has continuous competition from new developments, short-term rental investors, and luxury properties. Generic listings don't stand out in this crowded field. Your property needs compelling differentiation to attract buyers.
               </p>
             </div>
             
             <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">H3: Presentation Issues</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Presentation Issues</h3>
               <p className="text-gray-700">
                 Paradise buyers expect high standards. Properties that look dated, need updates, or lack professional presentation struggle against newer, better-presented competitors. Professional staging and photography are essential, not optional.
               </p>
@@ -93,7 +93,7 @@ export default function ParadisePage() {
           </div>
 
           <div className="bg-white p-8 rounded-lg border border-gray-200">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: The Paradise Positioning Challenge</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">The Paradise Positioning Challenge</h3>
             <p className="text-gray-700 mb-3">
               Paradise properties that didn't sell often struggled with positioning against intense competition. Buyers have countless options near the Strip, so generic listings that don't communicate specific advantages get overlooked.
             </p>
@@ -120,7 +120,7 @@ export default function ParadisePage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Paradise Market Expertise</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Paradise Market Expertise</h3>
               <p className="text-gray-700 mb-3">
                 Dr. Jan understands Paradise's diverse market segments and what drives each buyer type. Her knowledge of luxury condos, investor preferences, employee housing needs, and entertainment-seeker motivations informs pricing and marketing strategies.
               </p>
@@ -133,7 +133,7 @@ export default function ParadisePage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Competitive Positioning</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Competitive Positioning</h3>
               <p className="text-gray-700 mb-3">
                 Your Paradise home competes against extensive alternatives. Dr. Jan identifies your specific competitive advantages and positions your property to highlight them. Proximity to specific Strip locations, amenities, investment potential, or lifestyle benefits become selling points.
               </p>
@@ -147,7 +147,7 @@ export default function ParadisePage() {
           </div>
 
           <div className="bg-green-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Success with Paradise Homes That Didn't Sell</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Success with Paradise Homes That Didn't Sell</h3>
             <p className="text-gray-700 mb-3">
               Dr. Jan's Paradise Las Vegas focus means she's sold multiple Paradise properties that previous agents couldn't move in this competitive market. Her understanding of Paradise buyers, pricing, and marketing creates results where generic approaches failed.
             </p>

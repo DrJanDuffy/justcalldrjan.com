@@ -38,7 +38,7 @@ export default function NorthLasVegasPage() {
             </div>
             
             <div className="bg-pink-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: North Las Vegas Quick Facts</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">North Las Vegas Quick Facts</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="font-bold mr-2">• Population:</span>
@@ -83,26 +83,26 @@ export default function NorthLasVegasPage() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Median Home Prices</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Median Home Prices</h3>
               <p className="text-4xl font-bold text-pink-600 mb-2">$385,000</p>
               <p className="text-gray-600">Median sale price, exceptional value for new construction</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Days on Market</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Days on Market</h3>
               <p className="text-4xl font-bold text-pink-600 mb-2">35</p>
               <p className="text-gray-600">Average days to sale for properly priced homes</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Active Listings</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Active Listings</h3>
               <p className="text-4xl font-bold text-pink-600 mb-2">212</p>
               <p className="text-gray-600">Homes available across North Las Vegas</p>
             </div>
           </div>
 
           <div className="bg-pink-600 text-white p-8 rounded-lg mb-8">
-            <h3 className="text-2xl font-bold mb-4">H3: Why North Las Vegas Properties Deliver Value</h3>
+            <h3 className="text-2xl font-bold mb-4">Why North Las Vegas Properties Deliver Value</h3>
             <p className="mb-4 text-pink-100">
               North Las Vegas real estate represents exceptional value due to new construction inventory, modern home features, and affordable pricing compared to older Las Vegas areas. New homes often include energy-efficient systems, modern floor plans, smart home features, and builder warranties.
             </p>
@@ -116,7 +116,7 @@ export default function NorthLasVegasPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Buying in North Las Vegas</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Buying in North Las Vegas</h3>
               <p className="text-gray-700 mb-3">
                 North Las Vegas buyers enjoy choices ranging from new construction to established neighborhoods. Skye Canyon offers mountain views and resort-style amenities. Tule Springs features new homes near planned commercial development. Aliante provides established community with mature amenities.
               </p>
@@ -129,7 +129,7 @@ export default function NorthLasVegasPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Selling in North Las Vegas</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Selling in North Las Vegas</h3>
               <p className="text-gray-700 mb-3">
                 North Las Vegas sellers compete with new construction inventory, requiring strategic positioning. Well-maintained homes in established communities near new developments can offer better value than brand-new homes while providing mature landscaping and proven neighborhood character.
               </p>
@@ -157,7 +157,7 @@ export default function NorthLasVegasPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Community Amenities</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Community Amenities</h3>
               <p className="text-gray-700 mb-3">
                 North Las Vegas master-planned communities offer resort-style amenities: community pools with cabanas, fitness centers, parks with play structures, basketball courts, and walking trails. These amenities rival premium areas at fraction of cost, creating strong value proposition.
               </p>
@@ -170,7 +170,7 @@ export default function NorthLasVegasPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Schools and Education</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Schools and Education</h3>
               <p className="text-gray-700 mb-3">
                 North Las Vegas schools include newer facilities with modern technology and programs. Clark County School District serves the area with new schools being built to support population growth. Many families choosing North Las Vegas specifically appreciate newer school facilities.
               </p>
@@ -184,7 +184,7 @@ export default function NorthLasVegasPage() {
           </div>
 
           <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Convenience and Location</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Convenience and Location</h3>
             <p className="text-gray-700 mb-3">
               North Las Vegas location provides convenient access to entire Las Vegas Valley via major highways. The area sits near Interstate 15 for quick access to Strip and downtown, Highway 215 connects to Summerlin and Henderson, and US 95 provides valley-wide connectivity.
             </p>
@@ -210,7 +210,7 @@ export default function NorthLasVegasPage() {
           </p>
 
           <div className="bg-white p-8 rounded-lg mb-8 shadow-md">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Why North Las Vegas Properties Need Strategic Approach</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Why North Las Vegas Properties Need Strategic Approach</h3>
             <p className="text-gray-700 mb-3">
               When North Las Vegas homes don't sell, it's often because they're competing against new construction without highlighting comparative advantages. Pricing must reflect value relative to new homes while showcasing what existing homes offer that new construction can't.
             </p>
@@ -224,7 +224,7 @@ export default function NorthLasVegasPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Finding Your North Las Vegas Home</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Finding Your North Las Vegas Home</h3>
               <p className="text-gray-700 mb-3">
                 North Las Vegas buyers face decisions between new construction and existing homes, different master-planned communities, and various price ranges. Understanding trade-offs between new construction customization vs immediate move-in, and between established vs developing areas, requires expertise.
               </p>
@@ -234,7 +234,7 @@ export default function NorthLasVegasPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Selling Your North Las Vegas Property</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Selling Your North Las Vegas Property</h3>
               <p className="text-gray-700 mb-3">
                 North Las Vegas sellers need strategies that compete with new construction while highlighting unique value propositions. Whether selling newer or existing homes, understanding target buyer motivations and positioning accordingly determines success.
               </p>

@@ -30,7 +30,7 @@ export default function WhyDidntItSellPage() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-red-50 p-8 rounded-lg border border-red-200">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Pricing Problems</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Pricing Problems</h3>
               <p className="text-gray-700 mb-3">
                 Wrong pricing is the number one reason homes don't sell. When your home is priced above market value, buyers won't make offers no matter how many showings you get. Overpricing makes buyers think there's room to negotiate or assume something's wrong with the property.
               </p>
@@ -43,7 +43,7 @@ export default function WhyDidntItSellPage() {
             </div>
             
             <div className="bg-yellow-50 p-8 rounded-lg border border-yellow-200">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Presentation Issues</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Presentation Issues</h3>
               <p className="text-gray-700 mb-3">
                 Poor presentation makes buyers undervalue your home or lose interest before even viewing it in person. Presentation includes photography quality, staging, cleanliness, maintenance, and curb appeal. Every aspect matters in today's competitive market.
               </p>
@@ -56,7 +56,7 @@ export default function WhyDidntItSellPage() {
             </div>
             
             <div className="bg-blue-50 p-8 rounded-lg border border-blue-200">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Marketing Gaps</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Marketing Gaps</h3>
               <p className="text-gray-700 mb-3">
                 Insufficient marketing reach means your home never found the right buyers. While MLS listing is essential, today's buyers discover homes through multiple channels: social media, search engines, email alerts, agent networks, and digital advertising.
               </p>
@@ -84,7 +84,7 @@ export default function WhyDidntItSellPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Pricing Problem Signs</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Pricing Problem Signs</h3>
               <p className="text-gray-700 mb-3">
                 Signs that pricing was the issue include having many showings but no offers, receiving feedback that the home was overpriced, other homes in your neighborhood selling while yours sat, or your home being one of oldest listings in the area.
               </p>
@@ -97,7 +97,7 @@ export default function WhyDidntItSellPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Presentation Problem Signs</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Presentation Problem Signs</h3>
               <p className="text-gray-700 mb-3">
                 Presentation issues are indicated by buyers saying the home looked different in photos than in person, feedback about dated décor or needed updates, complaints about cleanliness or maintenance issues, or very short showing times.
               </p>
@@ -111,7 +111,7 @@ export default function WhyDidntItSellPage() {
           </div>
 
           <div className="bg-blue-600 text-white p-8 rounded-lg mb-8">
-            <h3 className="text-2xl font-bold mb-4">H3: Marketing Problem Signs</h3>
+            <h3 className="text-2xl font-bold mb-4">Marketing Problem Signs</h3>
             <p className="mb-4 text-blue-100">
               Marketing issues are harder for homeowners to identify but show up in low showing activity despite reasonable pricing and good presentation. If comparable homes are getting showings while yours sits, marketing reach was likely insufficient.
             </p>
@@ -138,7 +138,7 @@ export default function WhyDidntItSellPage() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-red-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Fixing Pricing Issues</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Fixing Pricing Issues</h3>
               <p className="text-gray-700 mb-3">
                 Dr. Jan provides comprehensive market analysis showing recent sales in your exact neighborhood, current competition, and recommended pricing strategy. This objective data replaces guesswork with informed decisions.
               </p>
@@ -148,7 +148,7 @@ export default function WhyDidntItSellPage() {
             </div>
             
             <div className="bg-yellow-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Fixing Presentation</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Fixing Presentation</h3>
               <p className="text-gray-700 mb-3">
                 She either works with you to improve staging using your existing furniture or invests in professional staging service depending on what makes most sense. Professional photography and videography are included.
               </p>
@@ -158,7 +158,7 @@ export default function WhyDidntItSellPage() {
             </div>
             
             <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Fixing Marketing</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Fixing Marketing</h3>
               <p className="text-gray-700 mb-3">
                 Her marketing strategy is comprehensive and multi-channel: professional photography and videography, virtual tours, social media promotion, targeted digital advertising, neighborhood marketing, email campaigns, and agent network activation.
               </p>
@@ -169,7 +169,7 @@ export default function WhyDidntItSellPage() {
           </div>
 
           <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: The Systematic Approach</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">The Systematic Approach</h3>
             <p className="text-gray-700 mb-3">
               Rather than trying everything and hoping something works, Dr. Jan's approach systematically addresses identified issues. If pricing was the only problem, that gets fixed. If it was combination of pricing and presentation, both get addressed comprehensively.
             </p>
@@ -196,7 +196,7 @@ export default function WhyDidntItSellPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Summerlin Home - Pricing Issue</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Summerlin Home - Pricing Issue</h3>
               <p className="text-gray-700 mb-3">
                 A 4-bedroom Summerlin home sat on market for 6 months with 47 showings but zero offers. The homeowner was convinced the price was fair based on their renovation investment. Dr. Jan's market analysis showed the home was priced 12% above recent comparable sales.
               </p>
@@ -209,7 +209,7 @@ export default function WhyDidntItSellPage() {
             </div>
             
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Henderson Home - Presentation and Marketing</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Henderson Home - Presentation and Marketing</h3>
               <p className="text-gray-700 mb-3">
                 A Henderson home with 3 months on market had limited showing activity. The photos were dimly lit and didn't showcase the home's features. No virtual tour, minimal online presence, and only basic MLS marketing meant most buyers never discovered the listing.
               </p>

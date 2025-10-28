@@ -38,7 +38,7 @@ export default function HendersonPage() {
             </div>
             
             <div className="bg-green-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Henderson Quick Facts</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Henderson Quick Facts</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="font-bold mr-2">• Population:</span>
@@ -83,26 +83,26 @@ export default function HendersonPage() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Median Home Prices</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Median Home Prices</h3>
               <p className="text-4xl font-bold text-green-600 mb-2">$450,000</p>
               <p className="text-gray-600">Median sale price, approximately 20% below Summerlin average</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Average Days on Market</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Average Days on Market</h3>
               <p className="text-4xl font-bold text-green-600 mb-2">38</p>
               <p className="text-gray-600">Days, competitive with premium areas</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Active Listings</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Active Listings</h3>
               <p className="text-4xl font-bold text-green-600 mb-2">189</p>
               <p className="text-gray-600">Homes currently available across Henderson</p>
             </div>
           </div>
 
           <div className="bg-green-600 text-white p-8 rounded-lg mb-8">
-            <h3 className="text-2xl font-bold mb-4">H3: Why Henderson Properties Hold Their Value</h3>
+            <h3 className="text-2xl font-bold mb-4">Why Henderson Properties Hold Their Value</h3>
             <p className="mb-4 text-green-100">
               Henderson real estate maintains strong value due to consistent population growth, excellent school system, and reputation for safety. The city's ongoing development and infrastructure improvements support continued appreciation.
             </p>
@@ -116,7 +116,7 @@ export default function HendersonPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Buying in Henderson</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Buying in Henderson</h3>
               <p className="text-gray-700 mb-3">
                 Henderson buyers enjoy more choices and better affordability than premium areas. Popular neighborhoods include Green Valley with its upscale amenities, Anthem with golf course living, Seven Hills offering mountain views, and Inspirada with new construction.
               </p>
@@ -129,7 +129,7 @@ export default function HendersonPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Selling in Henderson</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Selling in Henderson</h3>
               <p className="text-gray-700 mb-3">
                 Henderson sellers benefit from strong demand driven by value-seeking buyers. Properties that show well and are priced competitively often sell quickly. Understanding which Henderson sub-communities command premium pricing helps optimize sale price.
               </p>
@@ -157,7 +157,7 @@ export default function HendersonPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Education and Schools</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Education and Schools</h3>
               <p className="text-gray-700 mb-3">
                 Henderson boasts many of Clark County's highest-rated schools, including Coronado High School consistently ranked among Nevada's top schools. Elementary and middle schools across Green Valley and Anthem receive strong ratings, attracting families specifically for education quality.
               </p>
@@ -170,7 +170,7 @@ export default function HendersonPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Recreation and Parks</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Recreation and Parks</h3>
               <p className="text-gray-700 mb-3">
                 Henderson's recreational amenities rival any Las Vegas community. The city operates multiple recreation centers, swimming pools, sports facilities, and over 70 parks. Corcoran Park, Mission Hills Park, and Acacia Park are among the largest and most popular.
               </p>
@@ -184,7 +184,7 @@ export default function HendersonPage() {
           </div>
 
           <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Shopping and Dining</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Shopping and Dining</h3>
             <p className="text-gray-700 mb-3">
               Henderson's Green Valley area features The District shopping center with major retailers, upscale shops, and diverse dining options. The Galleria at Sunset offers additional shopping while the new Downtown Henderson development adds urban-style shopping and dining options.
             </p>
@@ -210,7 +210,7 @@ export default function HendersonPage() {
           </p>
 
           <div className="bg-white p-8 rounded-lg mb-8 shadow-md">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Why Henderson Properties Need Specialized Expertise</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Why Henderson Properties Need Specialized Expertise</h3>
             <p className="text-gray-700 mb-3">
               When Henderson homes don't sell, it's often due to misalignment between pricing and buyer expectations, inadequate marketing, or presentation issues. Henderson's competitive market means properties must be positioned correctly to attract buyers.
             </p>
@@ -224,7 +224,7 @@ export default function HendersonPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Finding Your Henderson Home</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Finding Your Henderson Home</h3>
               <p className="text-gray-700 mb-3">
                 Henderson buyers benefit from a range of options across various price points. Whether seeking an affordable starter home in established neighborhoods, a mid-range family home in Anthem, or luxury living in Green Valley, choices exist.
               </p>
@@ -234,7 +234,7 @@ export default function HendersonPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Selling Your Henderson Property</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Selling Your Henderson Property</h3>
               <p className="text-gray-700 mb-3">
                 Henderson sellers competing in a value-conscious market need pricing strategy that's competitive yet maximizes return. Understanding which improvements add value versus cost, and how to present homes appealingly to target buyer demographics, makes a difference.
               </p>

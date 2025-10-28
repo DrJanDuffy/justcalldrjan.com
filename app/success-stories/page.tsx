@@ -63,7 +63,7 @@ export default function SuccessStoriesPage() {
               <div key={index} className="bg-white border border-gray-200 rounded-lg p-8 shadow-md">
                 <div className="grid md:grid-cols-2 gap-8 mb-6">
                   <div>
-                    <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: {story.location} Home - {story.name}</h3>
+                    <h3 className="text-2xl font-bold mb-4 text-gray-900">{story.location} Home - {story.name}</h3>
                     <div className="space-y-4">
                       <div className="bg-red-50 p-4 rounded-lg">
                         <p className="font-semibold text-red-900 mb-2">Before Working with Dr. Jan:</p>
@@ -120,32 +120,32 @@ export default function SuccessStoriesPage() {
           <div className="grid md:grid-cols-4 gap-6 mb-12">
             <div className="bg-blue-600 text-white p-6 rounded-lg text-center">
               <div className="text-4xl font-bold mb-2">1</div>
-              <h3 className="text-xl font-bold mb-2">H3: Analysis</h3>
+              <h3 className="text-xl font-bold mb-2">Analysis</h3>
               <p className="text-blue-100">Understand why it didn't sell</p>
             </div>
             
             <div className="bg-blue-600 text-white p-6 rounded-lg text-center">
               <div className="text-4xl font-bold mb-2">2</div>
-              <h3 className="text-xl font-bold mb-2">H3: Strategy</h3>
+              <h3 className="text-xl font-bold mb-2">Strategy</h3>
               <p className="text-blue-100">Create custom action plan</p>
             </div>
             
             <div className="bg-blue-600 text-white p-6 rounded-lg text-center">
               <div className="text-4xl font-bold mb-2">3</div>
-              <h3 className="text-xl font-bold mb-2">H3: Execution</h3>
+              <h3 className="text-xl font-bold mb-2">Execution</h3>
               <p className="text-blue-100">Implement improvements</p>
             </div>
             
             <div className="bg-blue-600 text-white p-6 rounded-lg text-center">
               <div className="text-4xl font-bold mb-2">4</div>
-              <h3 className="text-xl font-bold mb-2">H3: Success</h3>
+              <h3 className="text-xl font-bold mb-2">Success</h3>
               <p className="text-blue-100">Sell successfully and close</p>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: The Analysis Phase</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">The Analysis Phase</h3>
               <p className="text-gray-700 mb-3">
                 Every successful relisting starts with honest analysis of what went wrong. Dr. Jan reviews the original listing details: pricing strategy, marketing efforts, showing activity, buyer feedback, and market conditions during listing period.
               </p>
@@ -158,7 +158,7 @@ export default function SuccessStoriesPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Creating the Action Plan</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Creating the Action Plan</h3>
               <p className="text-gray-700 mb-3">
                 Based on analysis, Dr. Jan creates a detailed action plan addressing identified issues. If pricing was the problem, she recommends specific listing price with market justification. If presentation needed work, she outlines staging or photography improvements. If marketing was insufficient, she explains comprehensive promotional strategy.
               </p>
@@ -186,7 +186,7 @@ export default function SuccessStoriesPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-blue-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: 47 Success Stories in 2024</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">47 Success Stories in 2024</h3>
               <p className="text-gray-700 mb-3">
                 In 2024 alone, Dr. Jan helped 47 homeowners successfully sell properties that had previously expired. These homes averaged 32 days on market with her strategy, compared to their original 180+ day listings that never found buyers.
               </p>
@@ -196,7 +196,7 @@ export default function SuccessStoriesPage() {
             </div>
             
             <div className="bg-green-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Average 32 Days to Sale</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Average 32 Days to Sale</h3>
               <p className="text-gray-700 mb-3">
                 Her expired listings typically sell in 30-45 days once issues are addressed, compared to their original multi-month listings that never received offers. This speed matters because every month a home sits unsold costs money in mortgage, utilities, insurance, and HOA fees.
               </p>
@@ -207,7 +207,7 @@ export default function SuccessStoriesPage() {
           </div>
 
           <div className="bg-blue-600 text-white p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4">H3: Getting Your Own Success Story</h3>
+            <h3 className="text-2xl font-bold mb-4">Getting Your Own Success Story</h3>
             <p className="mb-4 text-blue-100">
               The first step is scheduling a free consultation. During this consultation, Dr. Jan reviews your specific situation, analyzes what likely prevented your sale, and outlines a strategic approach customized to your home and goals.
             </p>

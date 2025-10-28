@@ -38,7 +38,7 @@ export default function AboutPage() {
             </div>
             
             <div className="bg-blue-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Dr. Jan's Results</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Dr. Jan's Results</h3>
               <div className="space-y-4">
                 <div>
                   <p className="font-bold text-blue-600 mb-1">47 Homes Sold</p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: The Real Problem with Homes That Don't Sell</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">The Real Problem with Homes That Don't Sell</h3>
               <p className="text-gray-700 mb-3">
                 In her experience working with over 100 expired listings, Dr. Jan has identified that homes don't sell for three main reasons: pricing, presentation, or promotion. The good news? All three are fixable with the right strategy.
               </p>
@@ -88,7 +88,7 @@ export default function AboutPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Promotion and Marketing Gaps</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Promotion and Marketing Gaps</h3>
               <p className="text-gray-700 mb-3">
                 Marketing reach is often the third issue. Many expired listings had minimal marketing beyond the MLS - maybe an open house or two but not the comprehensive digital marketing strategy needed in today's market.
               </p>
@@ -102,7 +102,7 @@ export default function AboutPage() {
           </div>
 
           <div className="bg-blue-600 text-white p-8 rounded-lg mb-8">
-            <h3 className="text-2xl font-bold mb-4">H3: Success Through Systematic Problem-Solving</h3>
+            <h3 className="text-2xl font-bold mb-4">Success Through Systematic Problem-Solving</h3>
             <p className="mb-4 text-blue-100">
               Dr. Jan's process starts with honest assessment: why didn't it sell? She analyzes the original listing price versus actual market value. She reviews the photos and staging. She examines the marketing efforts and showing feedback. She speaks with the previous agent when possible to understand what feedback came in.
             </p>
@@ -129,7 +129,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Las Vegas Market Knowledge</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Las Vegas Market Knowledge</h3>
               <p className="text-gray-700 mb-3">
                 Dr. Jan has sold homes throughout Las Vegas: Summerlin's master-planned communities, Henderson's affordable neighborhoods, downtown's urban condos, Paradise's luxury high-rises, and everything in between.
               </p>
@@ -139,7 +139,7 @@ export default function AboutPage() {
             </div>
             
             <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Pricing Strategy Expertise</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Pricing Strategy Expertise</h3>
               <p className="text-gray-700 mb-3">
                 Pricing homes correctly in Las Vegas requires understanding both market forces and property-specific factors. Dr. Jan's pricing strategy goes beyond computer-generated estimates to consider local nuances, competition timing, seasonal patterns, and buyer psychology.
               </p>
@@ -149,7 +149,7 @@ export default function AboutPage() {
             </div>
             
             <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Marketing Excellence</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Marketing Excellence</h3>
               <p className="text-gray-700 mb-3">
                 Modern real estate marketing requires a comprehensive digital presence, and Dr. Jan delivers professional marketing that reaches buyers everywhere they search for homes.
               </p>
@@ -161,7 +161,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Neighborhood Expertise</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Neighborhood Expertise</h3>
               <p className="text-gray-700 mb-3">
                 Dr. Jan knows Las Vegas neighborhoods intimately: Summerlin's master-planned luxury, Henderson's family-friendly value, downtown's urban appeal, Paradise's strip-adjacent living, and dozens of other communities.
               </p>
@@ -174,7 +174,7 @@ export default function AboutPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Problem-Solving Approach</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Problem-Solving Approach</h3>
               <p className="text-gray-700 mb-3">
                 What distinguishes Dr. Jan is her systematic approach to solving the problems that caused homes not to sell. Many agents simply try the same things again hoping for different results. Dr. Jan diagnoses the specific issues and creates targeted solutions.
               </p>
@@ -198,7 +198,7 @@ export default function AboutPage() {
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Initial Consultation and Assessment</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Initial Consultation and Assessment</h3>
               <p className="text-gray-700 mb-3">
                 Working with Dr. Jan starts with a comprehensive consultation where she learns about your situation. She wants to understand what happened with the original listing: why did you choose that agent, how was the home priced, what marketing was done, what feedback came from showings?
               </p>
@@ -211,7 +211,7 @@ export default function AboutPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Strategic Action Plan</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Strategic Action Plan</h3>
               <p className="text-gray-700 mb-3">
                 Once the issues are identified, Dr. Jan creates a detailed action plan customized to your specific situation. This plan addresses pricing, presentation, and marketing systematically. It's not generic advice - it's a tailored strategy for your home, your neighborhood, and your goals.
               </p>
@@ -225,7 +225,7 @@ export default function AboutPage() {
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Ongoing Communication and Results</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Ongoing Communication and Results</h3>
             <p className="text-gray-700 mb-3">
               Dr. Jan maintains consistent communication throughout the selling process. Homeowners receive regular updates on showing activity, buyer feedback, market changes, and strategic adjustments. She's responsive to questions and proactive in managing issues as they arise.
             </p>

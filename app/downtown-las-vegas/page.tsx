@@ -30,7 +30,7 @@ export default function DowntownLasVegasPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Historic Charm Meets Modern Living</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Historic Charm Meets Modern Living</h3>
               <p className="text-gray-700 mb-3">
                 Downtown Las Vegas features historic homes mixed with modern condos and lofts. The area's character attracts both investors and residents seeking urban living outside the Strip's entertainment corridor. This diversity can make positioning challenging for homes that didn't sell initially.
               </p>
@@ -43,7 +43,7 @@ export default function DowntownLasVegasPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Downtown's Growing Appeal</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Downtown's Growing Appeal</h3>
               <p className="text-gray-700 mb-3">
                 With World Market Center, Container Park, Fremont Street Experience, and ongoing development, Downtown Las Vegas is attracting new residents, businesses, and investors. This growth creates both opportunity and competition for sellers.
               </p>
@@ -71,21 +71,21 @@ export default function DowntownLasVegasPage() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-red-50 p-6 rounded-lg border border-red-200">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">H3: Pricing for Yesterday's Market</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Pricing for Yesterday's Market</h3>
               <p className="text-gray-700">
                 Downtown is changing rapidly. Properties priced based on old comps miss today's reality. New developments are raising prices in some areas while others wait for transformation. Your price needs to reflect current Downtown valuation, not historical averages.
               </p>
             </div>
             
             <div className="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">H3: Wrong Buyer Target</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Wrong Buyer Target</h3>
               <p className="text-gray-700">
                 Downtown attracts specific buyer types: investors, urban living enthusiasts, and those seeking character homes. Generic marketing that doesn't speak to these buyers wastes time and money. Your home that didn't sell likely reached the wrong audience.
               </p>
             </div>
             
             <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">H3: Presentation Issues</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Presentation Issues</h3>
               <p className="text-gray-700">
                 Historic charm needs balance with modern expectations. Homes showing their age without highlighting character features struggle to compete. Professional staging and photography that showcase Downtown living make dramatic differences.
               </p>
@@ -93,7 +93,7 @@ export default function DowntownLasVegasPage() {
           </div>
 
           <div className="bg-white p-8 rounded-lg border border-gray-200">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: The Downtown Positioning Challenge</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">The Downtown Positioning Challenge</h3>
             <p className="text-gray-700 mb-3">
               Downtown Las Vegas homes that didn't sell often struggled with positioning. Buyers coming to Downtown want character, location benefits, and value. Generic listings don't communicate these Downtown-specific advantages.
             </p>
@@ -120,7 +120,7 @@ export default function DowntownLasVegasPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Downtown Market Knowledge</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Downtown Market Knowledge</h3>
               <p className="text-gray-700 mb-3">
                 Dr. Jan understands Downtown's nuances: which blocks are appreciating, what buyers are seeking, and how historic charm commands premium pricing. Her knowledge of Downtown development and buyer patterns informs pricing and marketing strategies.
               </p>
@@ -133,7 +133,7 @@ export default function DowntownLasVegasPage() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Highlighting Downtown Advantages</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Highlighting Downtown Advantages</h3>
               <p className="text-gray-700 mb-3">
                 Your Downtown home has unique selling points: walkability, historic character, investment potential, transit access, and proximity to attractions. Generic listings don't communicate these advantages effectively.
               </p>
@@ -147,7 +147,7 @@ export default function DowntownLasVegasPage() {
           </div>
 
           <div className="bg-purple-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">H3: Success with Downtown Homes That Didn't Sell</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">Success with Downtown Homes That Didn't Sell</h3>
             <p className="text-gray-700 mb-3">
               Dr. Jan's Downtown Las Vegas focus means she's sold multiple Downtown properties that previous agents couldn't move. Her understanding of Downtown buyers, pricing, and marketing creates results where generic approaches failed.
             </p>
