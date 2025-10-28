@@ -31,8 +31,17 @@ export default function SiteNavigation() {
               <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                 Contact
               </Link>
+              <Link href="/didnt-sell" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+                Didn't Sell?
+              </Link>
+              <Link href="/expired-listing-help" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+                Expired Listing Help
+              </Link>
+              <Link href="/home-valuation" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+                Home Value
+              </Link>
               <a
-                href="tel:+17025667890"
+                href="tel:+17022221964"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-semibold flex items-center gap-2"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -92,12 +101,33 @@ export default function SiteNavigation() {
               >
                 Contact
               </Link>
+              <Link
+                href="/didnt-sell"
+                className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Didn't Sell?
+              </Link>
+              <Link
+                href="/expired-listing-help"
+                className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Expired Listing Help
+              </Link>
+              <Link
+                href="/home-valuation"
+                className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home Value
+              </Link>
               <a
-                href="tel:+17025667890"
+                href="tel:+17022221964"
                 className="block px-3 py-2 bg-blue-600 text-white rounded-md font-semibold text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Call (702) 566-7890
+                Call (702) 222-1964
               </a>
             </div>
           </div>

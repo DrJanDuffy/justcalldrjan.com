@@ -6,6 +6,7 @@ const neighborhoods = [
   { 
     name: 'Summerlin', 
     slug: 'summerlin',
+    path: '/neighborhoods/summerlin',
     description: 'Master-planned community with golf courses, parks, and top-rated schools',
     medianPrice: '$575,000',
     activeListings: 234,
@@ -14,6 +15,7 @@ const neighborhoods = [
   { 
     name: 'Henderson', 
     slug: 'henderson',
+    path: '/neighborhoods/henderson',
     description: 'Fast-growing city with great value and diverse housing options',
     medianPrice: '$450,000',
     activeListings: 189,
@@ -21,7 +23,8 @@ const neighborhoods = [
   },
   { 
     name: 'Downtown Las Vegas', 
-    slug: 'downtown',
+    slug: 'downtown-las-vegas',
+    path: '/downtown-las-vegas',
     description: 'Urban living with condos, lofts, and entertainment district access',
     medianPrice: '$325,000',
     activeListings: 156,
@@ -30,6 +33,7 @@ const neighborhoods = [
   { 
     name: 'Paradise', 
     slug: 'paradise',
+    path: '/paradise',
     description: 'Strip-adjacent with high-rises and luxury condominiums',
     medianPrice: '$380,000',
     activeListings: 201,
@@ -38,6 +42,7 @@ const neighborhoods = [
   { 
     name: 'Enterprise', 
     slug: 'enterprise',
+    path: '/enterprise',
     description: 'West side value with new construction and established communities',
     medianPrice: '$425,000',
     activeListings: 167,
@@ -46,26 +51,47 @@ const neighborhoods = [
   { 
     name: 'Spring Valley', 
     slug: 'spring-valley',
+    path: '/spring-valley',
     description: 'Central location with established neighborhoods and good schools',
     medianPrice: '$395,000',
     activeListings: 143,
     lifestyle: ['Established', 'Central', 'Family-Friendly']
   },
   { 
-    name: 'Green Valley', 
-    slug: 'green-valley',
-    description: 'Henderson neighborhood with upscale homes and shopping',
-    medianPrice: '$520,000',
-    activeListings: 178,
-    lifestyle: ['Upscale', 'Shopping', 'Golf']
-  },
-  { 
     name: 'North Las Vegas', 
     slug: 'north-las-vegas',
+    path: '/neighborhoods/north-las-vegas',
     description: 'Affordable new construction with great family amenities',
     medianPrice: '$385,000',
     activeListings: 212,
     lifestyle: ['New Builds', 'Affordable', 'Family-Friendly']
+  },
+  { 
+    name: 'Boulder City', 
+    slug: 'boulder-city',
+    path: '/boulder-city',
+    description: 'Small-town charm near Lake Mead with outdoor recreation access',
+    medianPrice: '$420,000',
+    activeListings: 98,
+    lifestyle: ['Outdoor Recreation', 'Lake Access', 'Small-Town']
+  },
+  { 
+    name: 'Winchester', 
+    slug: 'winchester',
+    path: '/winchester',
+    description: 'Diverse area with convenience and access near McCarran International',
+    medianPrice: '$360,000',
+    activeListings: 134,
+    lifestyle: ['Convenience', 'Airport Access', 'Diverse']
+  },
+  { 
+    name: 'Whitney', 
+    slug: 'whitney',
+    path: '/whitney',
+    description: 'East Las Vegas family-friendly community with established neighborhoods',
+    medianPrice: '$370,000',
+    activeListings: 145,
+    lifestyle: ['Family-Friendly', 'Established', 'Safe']
   }
 ]
 
@@ -98,6 +124,7 @@ export default function NeighborhoodsPage() {
             {neighborhoods.map((neighborhood) => (
               <Link 
                 key={neighborhood.slug}
+                href={neighborhood.path}
                 href={`/neighborhoods/${neighborhood.slug}`}
                 className="group"
               >
@@ -276,7 +303,7 @@ export default function NeighborhoodsPage() {
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <a
-              href="tel:+17025667890"
+              href="tel:+17022221964"
               className="bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors"
             >
               Call: (702) 222-1964
