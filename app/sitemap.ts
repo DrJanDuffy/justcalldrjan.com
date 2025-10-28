@@ -220,6 +220,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.75,
     },
+    {
+      url: `${baseUrl}/zipcodes/89103`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/zipcodes/89128`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/zipcodes/89129`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/zipcodes/89134`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
     
     // Berkshire Hathaway Pages - 0.85
     {
