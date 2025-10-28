@@ -2,10 +2,24 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
 
 export default function PricingMasteryPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'Pricing Mastery: Why 73% of Expired Listings Were Overpriced',
+    description: 'Your home didn\'t sell because it was priced 5-15% too high. Dr. Jan\'s PhD-level pricing approach backed by 30 years of Vegas market data ensures accurate pricing that attracts buyers.',
+    datePublished: '2024-06-10',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-r from-green-700 to-emerald-700 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -182,7 +196,8 @@ export default function PricingMasteryPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 
