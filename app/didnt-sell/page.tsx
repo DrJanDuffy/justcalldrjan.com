@@ -1,11 +1,70 @@
-'use client'
-
 import Link from 'next/link'
+import type { Metadata } from 'next'
 import AuthorBadge from '@/components/author-badge'
+import StructuredData from '@/components/structured-data'
+import FAQSection from '@/components/faq-section'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
+import { getServiceSchemaForPage } from '@/lib/services'
+
+export const metadata: Metadata = {
+  title: 'Why Didn\'t Your Home Sell? | Dr. Janet Duffy - Las Vegas Real Estate',
+  description: 'Discover the three main reasons homes don\'t sell: pricing, presentation, and marketing. Learn how Dr. Janet Duffy helps Las Vegas homes that didn\'t sell get sold successfully.',
+  openGraph: {
+    title: 'Why Didn\'t Your Home Sell? Common Reasons Explained',
+    description: 'Understanding why your home didn\'t sell is the first step to selling it successfully. Learn the three main reasons and proven solutions.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+    url: `${BASE_URL}/didnt-sell`
+  },
+  alternates: {
+    canonical: `${BASE_URL}/didnt-sell`
+  }
+}
 
 export default function WhyDidntItSellPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'Why Didn\'t Your Home Sell? The Most Common Reasons',
+    description: 'Understanding why your home didn\'t sell is the first step to selling it successfully. Here are the most common reasons and how to fix them.',
+    datePublished: '2024-01-15',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
+  const serviceSchema = getServiceSchemaForPage('EXPIRED_LISTING_ASSISTANCE')
+
+  const faqs = [
+    {
+      question: 'What are the most common reasons a home doesn\'t sell?',
+      answer: 'The three main reasons homes don\'t sell are: 1) Pricing problems - homes priced above market value, 2) Presentation issues - poor photography, staging, or maintenance, and 3) Marketing gaps - insufficient reach to potential buyers through digital channels and agent networks.'
+    },
+    {
+      question: 'How can I tell if my home was overpriced?',
+      answer: 'Signs of overpricing include having many showings but no offers, receiving feedback that the home was overpriced, other homes in your neighborhood selling while yours sat, or your home being one of the oldest listings in the area. If agents brought interested buyers who didn\'t make offers, pricing was likely the issue.'
+    },
+    {
+      question: 'Can poor presentation really prevent a sale?',
+      answer: 'Yes, presentation is critical. Poor photography makes buyers scroll past your listing online. Professional staging helps buyers envision living in the space. Decluttering, depersonalizing, and strategic updates often pay for themselves through faster sales and higher prices.'
+    },
+    {
+      question: 'What kind of marketing is needed to sell a home?',
+      answer: 'Modern marketing requires professional photography and videography, virtual tours, social media promotion, targeted digital advertising, neighborhood marketing, email campaigns, and agent network activation. Simply listing on MLS isn\'t enough in competitive markets.'
+    },
+    {
+      question: 'How long does it take Dr. Janet Duffy to sell homes that didn\'t sell before?',
+      answer: 'Results vary based on specific issues, but Dr. Jan\'s average is 32 days from relisting to sale. Her systematic approach of diagnosing specific problems and creating targeted solutions typically results in homes that sat for months selling in weeks.'
+    },
+    {
+      question: 'What if multiple problems affected my home?',
+      answer: 'Dr. Jan\'s approach systematically addresses all identified issues. If pricing and presentation were both problems, both get fixed comprehensively. She analyzes specifically what happened with your listing to ensure the right problems get addressed efficiently.'
+    }
+  ]
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredData data={articleSchema} id="article-schema" />
+      <StructuredData data={serviceSchema} id="service-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       {/* Hero with H1 */}
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
@@ -257,6 +316,10 @@ export default function WhyDidntItSellPage() {
           </div>
         </div>
       </section>
-    </div>
+
+      {/* FAQ Section */}
+      <FAQSection faqs={faqs} />
+      </div>
+    </>
   )
 }

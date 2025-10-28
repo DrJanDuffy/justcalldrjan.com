@@ -3,7 +3,15 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
 import DeployBanner from '../components/deploy-banner'
 import SiteNavigation from '../components/site-nav'
+import SiteFooter from '../components/site-footer'
 import Analytics from './analytics'
+import StructuredData from '../components/structured-data'
+import { 
+  getLocalBusinessSchema, 
+  getOrganizationSchema, 
+  getRealEstateAgentSchema,
+  getWebSiteSchema 
+} from '../lib/schema'
 import './globals.css'
 
 const geistSans = Geist({
@@ -54,37 +62,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <Analytics />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'RealEstateAgent',
-              name: 'Dr. Janet Duffy',
-              description: 'Las Vegas real estate agent specializing in helping homes that didn\'t sell get sold successfully',
-              url: 'https://www.calldrduffy.com',
-              telephone: '+17022221964',
-              address: {
-                '@type': 'PostalAddress',
-                addressLocality: 'Las Vegas',
-                addressRegion: 'NV',
-                addressCountry: 'US'
-              },
-              areaServed: {
-                '@type': 'City',
-                name: 'Las Vegas'
-              },
-              jobTitle: 'Real Estate Agent',
-              knowsAbout: [
-                'Las Vegas Real Estate',
-                'Expired Listings',
-                'Home Selling',
-                'Property Valuation',
-                'Real Estate Marketing'
-              ]
-            })
-          }}
-        />
+        <StructuredData data={getRealEstateAgentSchema()} id="real-estate-agent-schema" />
+        <StructuredData data={getLocalBusinessSchema()} id="local-business-schema" />
+        <StructuredData data={getOrganizationSchema()} id="organization-schema" />
+        <StructuredData data={getWebSiteSchema()} id="website-schema" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -101,6 +82,7 @@ export default function RootLayout({
           <main>
             {children}
           </main>
+          <SiteFooter />
         </ThemeProvider>
       </body>
     </html>
