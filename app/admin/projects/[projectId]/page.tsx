@@ -2,8 +2,8 @@
 
 import { useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
-import { useApiValidation } from '../../../lib/hooks/useApiValidation'
-import ApiKeyError from '../../components/api-key-error'
+import { useApiValidation } from '@/lib/hooks/useApiValidation'
+import ApiKeyError from '@/app/components/api-key-error'
 
 export default function ProjectPage() {
   const params = useParams()
@@ -47,14 +47,14 @@ export default function ProjectPage() {
         const latestChatId = sortedChats[0].id
 
         // Redirect to the latest chat
-        router.replace(`/projects/${projectId}/chats/${latestChatId}`)
+        router.replace(`/admin/projects/${projectId}/chats/${latestChatId}`)
       } else {
         // No chats found, redirect to create new chat
-        router.replace(`/projects/${projectId}/chats/new`)
+        router.replace(`/admin/projects/${projectId}/chats/new`)
       }
     } catch (error) {
       // On error, redirect to new chat
-      router.replace(`/projects/${projectId}/chats/new`)
+      router.replace(`/admin/projects/${projectId}/chats/new`)
     }
   }
 

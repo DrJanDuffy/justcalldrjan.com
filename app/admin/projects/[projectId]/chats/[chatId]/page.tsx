@@ -3,11 +3,11 @@
 import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { ProjectDropdown, ChatDropdown } from './components'
-import PromptComponent from '../../../../components/prompt-component'
-import ApiKeyError from '../../../../components/api-key-error'
-import RateLimitDialog from '../../../../components/rate-limit-dialog'
-import ErrorDialog from '../../../../components/error-dialog'
-import { useApiValidation } from '../../../../../lib/hooks/useApiValidation'
+import PromptComponent from '@/app/components/prompt-component'
+import ApiKeyError from '@/app/components/api-key-error'
+import RateLimitDialog from '@/app/components/rate-limit-dialog'
+import ErrorDialog from '@/app/components/error-dialog'
+import { useApiValidation } from '@/lib/hooks/useApiValidation'
 
 export default function ChatPage() {
   const params = useParams()
