@@ -54,6 +54,37 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <Analytics />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'RealEstateAgent',
+              name: 'Dr. Janet Duffy',
+              description: 'Las Vegas real estate agent specializing in helping homes that didn\'t sell get sold successfully',
+              url: 'https://www.calldrduffy.com',
+              telephone: '+17022221964',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Las Vegas',
+                addressRegion: 'NV',
+                addressCountry: 'US'
+              },
+              areaServed: {
+                '@type': 'City',
+                name: 'Las Vegas'
+              },
+              jobTitle: 'Real Estate Agent',
+              knowsAbout: [
+                'Las Vegas Real Estate',
+                'Expired Listings',
+                'Home Selling',
+                'Property Valuation',
+                'Real Estate Marketing'
+              ]
+            })
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

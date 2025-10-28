@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import AuthorBadge from '@/components/author-badge'
 
 export default function WhyDidntItSellPage() {
   return (
@@ -14,6 +15,13 @@ export default function WhyDidntItSellPage() {
           <p className="text-xl md:text-2xl text-blue-100 max-w-3xl">
             Understanding why your home didn't sell is the first step to selling it successfully. Here are the most common reasons and how to fix them.
           </p>
+        </div>
+      </section>
+
+      {/* Author Badge */}
+      <section className="py-4 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <AuthorBadge />
         </div>
       </section>
 
