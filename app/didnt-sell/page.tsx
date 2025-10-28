@@ -180,7 +180,6 @@ export default function WhyDidntItSellPage() {
               The result is usually success where there was previous failure: homes that sat for months selling in weeks, properties with no offers attracting multiple offers, frustrated homeowners becoming successful sellers. This systematic approach is why she maintains such strong results with what many agents consider difficult listings.
             </p>
           </div>
-          </div>
         </div>
       </section>
 
