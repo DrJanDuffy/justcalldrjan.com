@@ -77,8 +77,8 @@ export default function SiteFooter() {
                 </a>
               </li>
               <li>
-                <a href="mailto:contact@calldrduffy.com" className="hover:text-white transition-colors">
-                  Email: contact@calldrduffy.com
+                <a href="mailto:HomeSales@CallDrDuffy.com" className="hover:text-white transition-colors">
+                  Email: HomeSales@CallDrDuffy.com
                 </a>
               </li>
               <li className="mt-4">

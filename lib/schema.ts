@@ -6,7 +6,7 @@ export const DR_JAN_INFO = {
   name: 'Dr. Janet Duffy',
   fullTitle: 'Dr. Janet Duffy | Licensed Real Estate Professional',
   telephone: '+17022221964',
-  email: 'contact@calldrduffy.com',
+  email: 'HomeSales@CallDrDuffy.com',
   licenseNumber: 'S.0197614',
   brokerage: 'Berkshire Hathaway HomeServices',
   location: 'Las Vegas, NV',
