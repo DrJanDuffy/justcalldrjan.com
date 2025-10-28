@@ -5,6 +5,9 @@ import { XIcon, ChevronDownIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export default function DeployBanner() {
+  // Banner disabled for production real estate site
+  return null
+  
   const [isVisible, setIsVisible] = useState(false)
   const [isMinimized, setIsMinimized] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
