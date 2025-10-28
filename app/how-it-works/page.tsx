@@ -2,10 +2,56 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import FAQSection from '@/components/faq-section'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
+import { getServiceSchemaForPage } from '@/lib/services'
 
 export default function HowItWorksPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'How Dr. Jan Helps Homes That Didn\'t Sell Get Sold',
+    description: 'A step-by-step look at Dr. Janet Duffy\'s proven process for turning expired listings into sold properties. From initial consultation to successful closing.',
+    datePublished: '2024-02-01',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
+  const serviceSchema = getServiceSchemaForPage('SELLER_REPRESENTATION')
+
+  const faqs = [
+    {
+      question: 'How long does Dr. Jan\'s process typically take?',
+      answer: 'Results vary by property and issues, but Dr. Jan\'s average is 32 days from relisting to sale for homes that didn\'t sell initially. Her systematic approach identifies problems quickly and implements targeted solutions efficiently.'
+    },
+    {
+      question: 'What happens in the initial consultation?',
+      answer: 'Dr. Jan reviews your expired listing comprehensively: showing activity, buyer feedback, market conditions, and competition. She identifies specific issues preventing sale and outlines a strategic plan with timeline, costs, and expected results.'
+    },
+    {
+      question: 'What if my home needs improvements?',
+      answer: 'Dr. Jan identifies which improvements add the most value for cost. Not every home needs major updates - strategic improvements, pricing adjustments, or marketing enhancements may be sufficient. Her plan outlines necessary improvements with expected impact.'
+    },
+    {
+      question: 'How is this different from my previous listing agent?',
+      answer: 'Dr. Jan specializes in expired listings and uses a diagnostic approach to identify specific issues. She provides comprehensive marketing, proactive communication, and data-driven pricing strategy. Her systematic process addresses problems rather than hoping they resolve themselves.'
+    },
+    {
+      question: 'What kind of communication can I expect?',
+      answer: 'Dr. Jan provides weekly updates via email and phone, instant access at 702-222-1964 for questions or concerns, proactive communication about showings and feedback, and strategic pivots when market conditions change. Your listing receives personal attention.'
+    },
+    {
+      question: 'What results can I realistically expect?',
+      answer: 'Typical results: 30-45 days on market for expired listings, competitive pricing attracting serious buyers, multiple offers when possible, and successful sales at fair market value. Dr. Jan\'s systematic approach creates consistent results for homes that didn\'t sell initially.'
+    }
+  ]
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <StructuredDataScript data={serviceSchema} id="service-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -206,7 +252,10 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
-    </div>
+      
+      <FAQSection faqs={faqs} />
+      </div>
+    </>
   )
 }
 

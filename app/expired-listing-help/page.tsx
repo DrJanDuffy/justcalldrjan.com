@@ -2,10 +2,56 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import FAQSection from '@/components/faq-section'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
+import { getServiceSchemaForPage } from '@/lib/services'
 
 export default function ExpiredListingHelpPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'Free Help for Expired Listings - Dr. Janet Duffy',
+    description: 'Your listing expired. What happens next? Get expert guidance and a proven plan to sell your home successfully.',
+    datePublished: '2024-01-25',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
+  const serviceSchema = getServiceSchemaForPage('EXPIRED_LISTING_ASSISTANCE')
+
+  const faqs = [
+    {
+      question: 'Why did my listing expire?',
+      answer: 'Most expired listings fail for specific reasons: pricing above market value, insufficient marketing reach, poor presentation, or lack of buyer interest. Dr. Jan\'s diagnostic analysis reviews showing activity, buyer feedback, and market conditions to identify what specifically prevented your sale.'
+    },
+    {
+      question: 'What should I do now that my listing expired?',
+      answer: 'Start with honest analysis of what didn\'t work. Dr. Jan offers free expired listing analysis to review what happened and create a strategic plan for successful relisting. Avoid relisting with the same approach or making random changes - diagnosis first, then targeted improvements.'
+    },
+    {
+      question: 'How long does it take to sell after relisting?',
+      answer: 'With targeted improvements addressing identified issues, expired listings typically sell in 30-45 days. Dr. Jan\'s systematic approach addresses specific problems rather than hoping market conditions changed, which creates faster results.'
+    },
+    {
+      question: 'What if my home needs improvements before relisting?',
+      answer: 'Dr. Jan\'s analysis identifies which improvements add the most value for cost. Not every expired listing needs major updates - sometimes pricing adjustments, better marketing, or presentation improvements are sufficient. Her strategic plan outlines necessary improvements with expected impact.'
+    },
+    {
+      question: 'How is relisting different from the first listing attempt?',
+      answer: 'Successful relisting starts with understanding what didn\'t work, then making targeted improvements. Dr. Jan reviews fresh market data, analyzes what prevented the first sale, and creates a strategic plan addressing specific issues rather than repeating the same approach.'
+    },
+    {
+      question: 'Is there really free help for expired listings?',
+      answer: 'Yes, Dr. Jan offers free expired listing analysis with no obligation. Her consultation reviews what happened, identifies issues, and outlines a strategic plan for successful relisting. This diagnostic approach helps you make informed decisions about next steps.'
+    }
+  ]
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <StructuredDataScript data={serviceSchema} id="service-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-r from-red-800 to-pink-700 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Free Help for Expired Listings - Dr. Janet Duffy</h1>
@@ -66,7 +112,10 @@ export default function ExpiredListingHelpPage() {
           </div>
         </div>
       </section>
-    </div>
+      
+      <FAQSection faqs={faqs} />
+      </div>
+    </>
   )
 }
 
