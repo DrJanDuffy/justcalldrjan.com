@@ -2,8 +2,21 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, getReviewSchema, getAggregateRatingSchema, BASE_URL } from '@/lib/schema'
 
 export default function SuccessStoriesPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'Success Stories: Homes That Didn\'t Sell, Then Sold Successfully',
+    description: 'Real results from homeowners whose properties didn\'t sell initially. Learn how Dr. Janet Duffy helped them sell successfully.',
+    datePublished: '2024-01-20',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
+  const aggregateRating = getAggregateRatingSchema(5, 3)
+
   const stories = [
     {
       location: 'Summerlin',
@@ -34,8 +47,23 @@ export default function SuccessStoriesPage() {
     }
   ]
 
+  // Create review schemas for each story
+  const reviewSchemas = stories.map((story, index) => getReviewSchema({
+    author: story.name,
+    rating: 5,
+    reviewBody: story.quote,
+    datePublished: `2024-${String(5 + index).padStart(2, '0')}-01`
+  }))
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <StructuredDataScript data={aggregateRating} id="aggregate-rating-schema" />
+      {reviewSchemas.map((review, index) => (
+        <StructuredDataScript key={index} data={review} id={`review-schema-${index}`} />
+      ))}
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       {/* Hero with H1 */}
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
@@ -254,7 +282,8 @@ export default function SuccessStoriesPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 

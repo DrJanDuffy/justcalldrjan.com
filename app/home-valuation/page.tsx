@@ -3,8 +3,42 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import FAQSection from '@/components/faq-section'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getServiceSchemaForPage } from '@/lib/services'
+import { BASE_URL } from '@/lib/schema'
 
 export default function HomeValuationPage() {
+  const serviceSchema = getServiceSchemaForPage('HOME_VALUATION')
+  
+  const faqs = [
+    {
+      question: 'How accurate is Dr. Jan\'s home valuation?',
+      answer: 'Dr. Jan\'s valuations use comprehensive market analysis including recent comparable sales in your exact neighborhood, current competition, property-specific features, and market conditions. This analysis provides accurate pricing reflecting actual market value, not automated estimates.'
+    },
+    {
+      question: 'How long does it take to get a home valuation?',
+      answer: 'After you submit your property information, Dr. Jan conducts thorough research and typically provides your valuation analysis within 24-48 hours. The process includes comparable sales review, competition analysis, and strategic pricing recommendations.'
+    },
+    {
+      question: 'What information do I need for a home valuation?',
+      answer: 'Basic property information helps: address, square footage, bedrooms, bathrooms, year built, condition, and any unique features. The more details provided, the more accurate the valuation. Dr. Jan conducts additional research including comparable sales and market analysis.'
+    },
+    {
+      question: 'Is the home valuation really free with no obligation?',
+      answer: 'Yes, your free home valuation includes no obligation to list your property. Dr. Jan provides honest, accurate valuations because she believes informed sellers make better decisions, whether you\'re ready to sell now or planning for the future.'
+    },
+    {
+      question: 'How is this different from online automated estimates?',
+      answer: 'Automated estimates use algorithms that can\'t account for property condition, unique features, neighborhood nuances, or current market dynamics. Dr. Jan\'s professional valuation examines your specific property, recent comps, competition, and provides personalized pricing recommendations.'
+    },
+    {
+      question: 'What does the valuation include?',
+      answer: 'Your valuation includes comprehensive market analysis, comparable sales research, competition evaluation, and strategic price range recommendations based on different selling goals. This detailed information helps you make informed pricing and timing decisions.'
+    }
+  ]
+
   const [formData, setFormData] = useState({
     address: '',
     name: '',
@@ -18,7 +52,10 @@ export default function HomeValuationPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={serviceSchema} id="service-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-r from-blue-800 to-cyan-700 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Free Home Value Analysis - Dr. Janet Duffy</h1>
@@ -165,7 +202,10 @@ export default function HomeValuationPage() {
           </div>
         </div>
       </section>
-    </div>
+      
+      <FAQSection faqs={faqs} />
+      </div>
+    </>
   )
 }
 
