@@ -2,10 +2,24 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
 
 export default function TurnaroundPlanPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'The Expired Listing Turnaround Plan: From Failed to Sold in 30 Days',
+    description: 'When you switch to Dr. Jan after an expired listing, here\'s exactly what changes immediately - a systematic 4-week plan that addresses every failure from your previous listing.',
+    datePublished: '2024-06-20',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-r from-orange-600 to-red-600 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -220,7 +234,8 @@ export default function TurnaroundPlanPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 

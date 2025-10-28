@@ -2,10 +2,24 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
 
 export default function CommunicationPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'Proactive Communication: Why 68% of Expired Listings Had Radio Silence',
+    description: 'Your home didn\'t sell because your agent disappeared. Dr. Jan delivers weekly updates, 24/7 accessibility, and strategic pivots that keep your listing moving toward sale.',
+    datePublished: '2024-06-15',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-r from-purple-700 to-indigo-800 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -179,7 +193,8 @@ export default function CommunicationPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 
