@@ -2,10 +2,24 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
 
 export default function MacDonaldRanchPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'MacDonald Ranch Henderson: Golf Course Homes Expert Help',
+    description: 'Specialized help for MacDonald Ranch homes that didn\'t sell. Expert guidance for successful home sales in Henderson\'s premier golf course community.',
+    datePublished: '2024-05-25',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-r from-green-600 to-teal-600 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -163,7 +177,8 @@ export default function MacDonaldRanchPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 

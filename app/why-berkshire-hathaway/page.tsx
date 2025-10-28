@@ -2,10 +2,24 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
 
 export default function WhyBerkshireHathawayPage() {
+  const articleSchema = getArticleSchema({
+    headline: 'Why Berkshire Hathaway HomeServices + Dr. Jan Duffy Wins When Your Home Doesn\'t Sell',
+    description: 'Three critical advantages that turn expired listings into sold properties. Institutional marketing power, pricing mastery, and proactive communication that boutique firms simply can\'t match.',
+    datePublished: '2024-07-01',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -317,7 +331,8 @@ export default function WhyBerkshireHathawayPage() {
           <p className="text-lg text-blue-200">No-pressure expired listing consultation. Your equity is too important to trust to hope and luck.</p>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 
