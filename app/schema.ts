@@ -1,6 +1,4 @@
-import { MetadataRoute } from 'next'
-
-export default function schema(): MetadataRoute {
+export default function schema(): object {
   return {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
