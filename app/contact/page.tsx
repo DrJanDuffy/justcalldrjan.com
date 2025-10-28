@@ -74,8 +74,9 @@ export default function ContactPage() {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Your Name</label>
+                <label htmlFor="contact-name" className="block text-sm font-semibold mb-2 text-gray-900">Your Name</label>
                 <input
+                  id="contact-name"
                   type="text"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -85,8 +86,9 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Email Address</label>
+                <label htmlFor="contact-email" className="block text-sm font-semibold mb-2 text-gray-900">Email Address</label>
                 <input
+                  id="contact-email"
                   type="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -96,8 +98,9 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Phone Number</label>
+                <label htmlFor="contact-phone" className="block text-sm font-semibold mb-2 text-gray-900">Phone Number</label>
                 <input
+                  id="contact-phone"
                   type="tel"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -107,8 +110,9 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Property Address</label>
+                <label htmlFor="contact-address" className="block text-sm font-semibold mb-2 text-gray-900">Property Address</label>
                 <input
+                  id="contact-address"
                   type="text"
                   value={formData.address}
                   onChange={(e) => setFormData({ ...formData, address: e.target.value })}
@@ -118,8 +122,9 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Message</label>
+                <label htmlFor="contact-message" className="block text-sm font-semibold mb-2 text-gray-900">Message</label>
                 <textarea
+                  id="contact-message"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows={4}

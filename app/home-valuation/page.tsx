@@ -141,36 +141,36 @@ export default function HomeValuationPage() {
           }} className="space-y-6 bg-gray-50 p-8 rounded-lg">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Property Address *</label>
-                <input type="text" value={formData.address} onChange={(e) => setFormData({...formData, address: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required />
+                <label htmlFor="val-address" className="block text-sm font-semibold mb-2 text-gray-900">Property Address *</label>
+                <input id="val-address" type="text" value={formData.address} onChange={(e) => setFormData({...formData, address: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Your Name *</label>
-                <input type="text" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required />
+                <label htmlFor="val-name" className="block text-sm font-semibold mb-2 text-gray-900">Your Name *</label>
+                <input id="val-name" type="text" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Email *</label>
-                <input type="email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required />
+                <label htmlFor="val-email" className="block text-sm font-semibold mb-2 text-gray-900">Email *</label>
+                <input id="val-email" type="email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Phone *</label>
-                <input type="tel" value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required />
+                <label htmlFor="val-phone" className="block text-sm font-semibold mb-2 text-gray-900">Phone *</label>
+                <input id="val-phone" type="tel" value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Bedrooms</label>
-                <input type="number" min="1" max="10" value={formData.bedrooms} onChange={(e) => setFormData({...formData, bedrooms: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
+                <label htmlFor="val-bedrooms" className="block text-sm font-semibold mb-2 text-gray-900">Bedrooms</label>
+                <input id="val-bedrooms" type="number" min="1" max="10" value={formData.bedrooms} onChange={(e) => setFormData({...formData, bedrooms: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Bathrooms</label>
-                <input type="number" min="1" max="10" step="0.5" value={formData.bathrooms} onChange={(e) => setFormData({...formData, bathrooms: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
+                <label htmlFor="val-bathrooms" className="block text-sm font-semibold mb-2 text-gray-900">Bathrooms</label>
+                <input id="val-bathrooms" type="number" min="1" max="10" step="0.5" value={formData.bathrooms} onChange={(e) => setFormData({...formData, bathrooms: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Square Feet</label>
-                <input type="number" min="100" value={formData.squareFeet} onChange={(e) => setFormData({...formData, squareFeet: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
+                <label htmlFor="val-sqft" className="block text-sm font-semibold mb-2 text-gray-900">Square Feet</label>
+                <input id="val-sqft" type="number" min="100" value={formData.squareFeet} onChange={(e) => setFormData({...formData, squareFeet: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-2 text-gray-900">Year Built</label>
-                <input type="number" min="1900" max={new Date().getFullYear()} value={formData.yearBuilt} onChange={(e) => setFormData({...formData, yearBuilt: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
+                <label htmlFor="val-year" className="block text-sm font-semibold mb-2 text-gray-900">Year Built</label>
+                <input id="val-year" type="number" min="1900" max={new Date().getFullYear()} value={formData.yearBuilt} onChange={(e) => setFormData({...formData, yearBuilt: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
               </div>
             </div>
 
