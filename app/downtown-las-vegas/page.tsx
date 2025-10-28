@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import AuthorBadge from '@/components/author-badge'
 
 export default function DowntownLasVegasPage() {
   return (
@@ -14,6 +15,13 @@ export default function DowntownLasVegasPage() {
           <p className="text-xl md:text-2xl text-purple-100 max-w-3xl mx-auto">
             Specialized help for homes that didn't sell in Downtown Las Vegas. Expert guidance for successful home sales in the heart of Sin City.
           </p>
+        </div>
+      </section>
+
+      {/* Author Badge */}
+      <section className="py-4 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <AuthorBadge />
         </div>
       </section>
 

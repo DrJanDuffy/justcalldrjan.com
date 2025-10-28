@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import AuthorBadge from '@/components/author-badge'
 
 export default function HendersonPage() {
   return (
@@ -14,6 +15,13 @@ export default function HendersonPage() {
           <p className="text-xl md:text-2xl text-teal-100 max-w-3xl">
             Henderson offers Las Vegas residents exceptional value with quality schools, family-friendly communities, and more affordable housing than many other Vegas areas.
           </p>
+        </div>
+      </section>
+
+      {/* Author Badge */}
+      <section className="py-4 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <AuthorBadge />
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import AuthorBadge from '@/components/author-badge'
 
 export default function SuccessStoriesPage() {
   const stories = [
@@ -44,6 +45,13 @@ export default function SuccessStoriesPage() {
           <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
             Real results from homeowners whose properties didn't sell initially. Learn how Dr. Janet Duffy helped them sell successfully.
           </p>
+        </div>
+      </section>
+
+      {/* Author Badge */}
+      <section className="py-4 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <AuthorBadge />
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import AuthorBadge from '@/components/author-badge'
 
 export default function EnterprisePage() {
   return (
@@ -9,6 +10,13 @@ export default function EnterprisePage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Enterprise, NV Real Estate Expert - Dr. Janet Duffy</h1>
           <p className="text-xl md:text-2xl text-indigo-100 max-w-3xl mx-auto">Specialized help for Enterprise homes that didn't sell. Expert guidance for successful home sales in this growing Las Vegas community.</p>
+        </div>
+      </section>
+
+      {/* Author Badge */}
+      <section className="py-4 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <AuthorBadge />
         </div>
       </section>
 

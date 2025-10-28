@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import AuthorBadge from '@/components/author-badge'
 
 export default function BoulderCityPage() {
   return (
@@ -13,6 +14,13 @@ export default function BoulderCityPage() {
           <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
             Specialized help for Boulder City homes that didn't sell. Expert guidance for successful home sales near Lake Mead and Hoover Dam.
           </p>
+        </div>
+      </section>
+
+      {/* Author Badge */}
+      <section className="py-4 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <AuthorBadge />
         </div>
       </section>
 

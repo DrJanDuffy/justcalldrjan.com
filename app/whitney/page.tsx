@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import AuthorBadge from '@/components/author-badge'
 
 export default function WhitneyPage() {
   return (
@@ -9,6 +10,13 @@ export default function WhitneyPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Whitney, NV Real Estate Expert - Dr. Janet Duffy</h1>
           <p className="text-xl md:text-2xl text-amber-100 max-w-3xl mx-auto">Specialized help for Whitney homes that didn't sell. Expert guidance for successful home sales in this diverse East Las Vegas community.</p>
+        </div>
+      </section>
+
+      {/* Author Badge */}
+      <section className="py-4 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <AuthorBadge />
         </div>
       </section>
 

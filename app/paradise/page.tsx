@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import AuthorBadge from '@/components/author-badge'
 
 export default function ParadisePage() {
   return (
@@ -14,6 +15,13 @@ export default function ParadisePage() {
           <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto">
             Helping Paradise homes that didn't sell achieve successful relisting. Expert guidance for Las Vegas neighborhoods near the Strip.
           </p>
+        </div>
+      </section>
+
+      {/* Author Badge */}
+      <section className="py-4 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <AuthorBadge />
         </div>
       </section>
 

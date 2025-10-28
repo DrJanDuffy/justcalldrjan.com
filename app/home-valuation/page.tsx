@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import AuthorBadge from '@/components/author-badge'
 
 export default function HomeValuationPage() {
   const [formData, setFormData] = useState({
@@ -22,6 +23,13 @@ export default function HomeValuationPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Free Home Value Analysis - Dr. Janet Duffy</h1>
           <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">Get accurate home value analysis for Las Vegas properties. Expert valuation insights to help you price competitively and sell successfully.</p>
+        </div>
+      </section>
+
+      {/* Author Badge */}
+      <section className="py-4 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <AuthorBadge />
         </div>
       </section>
 
