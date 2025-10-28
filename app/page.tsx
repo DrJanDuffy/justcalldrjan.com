@@ -195,10 +195,10 @@ export default function Homepage() {
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <a
-              href="tel:+17025667890"
+              href="tel:+17022221964"
               className="bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors"
             >
-              Call Now: (702) 566-7890
+              Call Now: (702) 222-1964
             </a>
             <Link
               href="/contact"
@@ -217,7 +217,7 @@ export default function Homepage() {
             <h3 className="text-xl font-bold mb-4">Dr. Janet Duffy</h3>
             <p>Your trusted Las Vegas real estate expert</p>
             <p className="mt-4">Office: Las Vegas, NV</p>
-            <p>Phone: (702) 566-7890</p>
+            <p>Phone: (702) 222-1964</p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>

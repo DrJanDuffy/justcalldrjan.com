@@ -298,7 +298,7 @@ export default function SummerlinPage() {
               href="tel:+17025667890"
               className="bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors"
             >
-              Call: (702) 566-7890
+              Call: (702) 222-1964
             </a>
             <Link
               href="/contact"
