@@ -15,18 +15,28 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Simple v0',
-  description: 'The simplest way to use v0 - just prompt and see your app',
+  title: 'Dr. Janet Duffy - Las Vegas Real Estate Agent',
+  description: 'Your trusted Las Vegas real estate expert. Find your dream home or sell with confidence. Call Dr. Janet Duffy today!',
   openGraph: {
-    title: 'Simple v0',
-    description: 'The simplest way to use v0 - just prompt and see your app',
+    title: 'Dr. Janet Duffy - Las Vegas Real Estate Agent',
+    description: 'Your trusted Las Vegas real estate expert. Find your dream home or sell with confidence.',
     images: ['/og-image.png'],
+    url: 'https://justcalldrjan.com',
+    siteName: 'Just Call Dr. Jan',
+    type: 'website',
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Simple v0',
-    description: 'The simplest way to use v0 - just prompt and see your app',
+    title: 'Dr. Janet Duffy - Las Vegas Real Estate',
+    description: 'Your trusted Las Vegas real estate expert. Find your dream home or sell with confidence.',
     images: ['/og-image.png'],
+  },
+  keywords: ['Las Vegas real estate', 'Nevada homes', 'real estate agent', 'Dr. Janet Duffy', 'Las Vegas realtor', 'property search', 'home buying', 'home selling'],
+  authors: [{ name: 'Dr. Janet Duffy' }],
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 
