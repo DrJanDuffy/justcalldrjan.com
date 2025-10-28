@@ -2,10 +2,24 @@
 
 import Link from 'next/link'
 import AuthorBadge from '@/components/author-badge'
+import StructuredDataScript from '@/components/structured-data-script'
+import Breadcrumbs from '@/components/breadcrumbs'
+import { getArticleSchema, getPersonSchema, BASE_URL } from '@/lib/schema'
 
 export default function Zip89074Page() {
+  const articleSchema = getArticleSchema({
+    headline: 'Zip Code 89074: Expert Help for Homes That Didn\'t Sell in Green Valley Henderson',
+    description: 'Specialized help for zip code 89074 homes that didn\'t sell. Expert guidance for successful home sales in Green Valley Henderson and surrounding Las Vegas areas.',
+    datePublished: '2024-04-05',
+    dateModified: '2024-12-01',
+    author: getPersonSchema()
+  })
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <StructuredDataScript data={articleSchema} id="article-schema" />
+      <Breadcrumbs />
+      <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-r from-green-600 to-teal-600 text-white py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -163,7 +177,8 @@ export default function Zip89074Page() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
 
