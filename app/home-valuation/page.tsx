@@ -1,8 +1,21 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 
 export default function HomeValuationPage() {
+  const [formData, setFormData] = useState({
+    address: '',
+    name: '',
+    email: '',
+    phone: '',
+    bedrooms: '',
+    bathrooms: '',
+    squareFeet: '',
+    yearBuilt: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   return (
     <div className="min-h-screen bg-white">
       <section className="bg-gradient-to-r from-blue-800 to-cyan-700 text-white py-20 px-4">
@@ -48,13 +61,99 @@ export default function HomeValuationPage() {
         </div>
       </section>
 
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold mb-6 text-gray-900 text-center">Get Your Free Home Value Today</h2>
+          <p className="text-xl mb-8 text-gray-700 text-center">Provide your property details for an accurate Las Vegas market analysis.</p>
+          
+          <form onSubmit={async (e) => {
+            e.preventDefault()
+            setIsSubmitting(true)
+            setSubmitStatus('idle')
+
+            try {
+              const response = await fetch('/api/leads', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  ...formData,
+                  message: `Home Valuation Request: ${formData.bedrooms}BR/${formData.bathrooms}BA, ${formData.squareFeet} sq ft, Built ${formData.yearBuilt}`,
+                  source: 'Home Valuation Page'
+                })
+              })
+
+              if (response.ok) {
+                setSubmitStatus('success')
+                setFormData({ address: '', name: '', email: '', phone: '', bedrooms: '', bathrooms: '', squareFeet: '', yearBuilt: '' })
+              } else {
+                setSubmitStatus('error')
+              }
+            } catch (error) {
+              setSubmitStatus('error')
+            } finally {
+              setIsSubmitting(false)
+            }
+          }} className="space-y-6 bg-gray-50 p-8 rounded-lg">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-semibold mb-2 text-gray-900">Property Address *</label>
+                <input type="text" value={formData.address} onChange={(e) => setFormData({...formData, address: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-2 text-gray-900">Your Name *</label>
+                <input type="text" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-2 text-gray-900">Email *</label>
+                <input type="email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-2 text-gray-900">Phone *</label>
+                <input type="tel" value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-2 text-gray-900">Bedrooms</label>
+                <input type="number" min="1" max="10" value={formData.bedrooms} onChange={(e) => setFormData({...formData, bedrooms: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-2 text-gray-900">Bathrooms</label>
+                <input type="number" min="1" max="10" step="0.5" value={formData.bathrooms} onChange={(e) => setFormData({...formData, bathrooms: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-2 text-gray-900">Square Feet</label>
+                <input type="number" min="100" value={formData.squareFeet} onChange={(e) => setFormData({...formData, squareFeet: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-2 text-gray-900">Year Built</label>
+                <input type="number" min="1900" max={new Date().getFullYear()} value={formData.yearBuilt} onChange={(e) => setFormData({...formData, yearBuilt: e.target.value})} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
+              </div>
+            </div>
+
+            {submitStatus === 'success' && (
+              <div className="bg-green-50 border border-green-200 text-green-800 p-4 rounded-lg">
+                <p className="font-semibold">Thank you! Dr. Jan will analyze your property and contact you with your home value estimate.</p>
+              </div>
+            )}
+            
+            {submitStatus === 'error' && (
+              <div className="bg-red-50 border border-red-200 text-red-800 p-4 rounded-lg">
+                <p className="font-semibold">Error submitting request. Please call (702) 222-1964.</p>
+              </div>
+            )}
+
+            <button type="submit" disabled={isSubmitting} className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-bold py-4 px-8 rounded-lg transition-colors">
+              {isSubmitting ? 'Submitting...' : 'Get My Free Home Valuation'}
+            </button>
+          </form>
+        </div>
+      </section>
+
       <section className="py-16 px-4 bg-gradient-to-r from-blue-800 to-cyan-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Get Your Free Home Value Today</h2>
-          <p className="text-xl mb-8 text-blue-100">Accurate market analysis for your Las Vegas property. Get expert valuation insights at no cost and no obligation.</p>
+          <p className="text-xl mb-8 text-blue-100">Or call directly for immediate assistance</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <a href="tel:+17022221964" className="bg-white text-blue-800 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors">Call: (702) 222-1964</a>
-            <Link href="/contact" className="bg-blue-800 text-white font-bold py-4 px-8 rounded-lg hover:bg-blue-900 transition-colors">Request Free Home Valuation</Link>
+            <Link href="/contact" className="bg-blue-800 text-white font-bold py-4 px-8 rounded-lg hover:bg-blue-900 transition-colors">Contact Form</Link>
           </div>
         </div>
       </section>
